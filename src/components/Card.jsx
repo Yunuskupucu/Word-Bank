@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import styles from '../style/Card.module.scss';
 
 export default function Card({ word, mean_tr, example_en, example_tr, level }) {
+  const [meaning, setMeaning] = useState(false);
+  const [example, setExample] = useState(false);
+
   function getRandomColor() {
     const colors = [
       'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
@@ -26,10 +30,20 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
   return (
     <div className={styles.card} style={{ background: getRandomColor() }}>
       <div className={styles.word}>
-        <button>{word}</button>
+        <button
+          className={styles.tooltipBtn}
+          onClick={() => setMeaning(!meaning)}
+        >
+          {meaning ? (mean_tr?.trim() ? mean_tr : 'Anlamı bulunamadı') : word}
+        </button>
       </div>
       <div className={styles.sentence}>
-        <button>{example_en}</button>
+        <button
+          className={styles.tooltipBtn}
+          onClick={() => setExample(!example)}
+        >
+          {example ? example_tr : example_en}
+        </button>
       </div>
       <div className={styles.level}>{level}</div>
     </div>
