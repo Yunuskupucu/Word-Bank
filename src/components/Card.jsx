@@ -31,7 +31,7 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
       <div className={styles.sentence}>
         <button>{example_en}</button>
       </div>
-      <div>{level}</div>
+      <div className={styles.level}>{level}</div>
     </div>
   );
 }
