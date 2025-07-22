@@ -1,4 +1,5 @@
 import styles from '../style/Header.module.scss';
+import Dropdown from './Dropdown';
 
 function Header() {
   return (
@@ -8,6 +9,9 @@ function Header() {
           <span> WORD BANK</span>
         </h1>
         <p>2025</p>
+      </div>
+      <div className={styles.dropdownContainer}>
+        <Dropdown />
       </div>
     </div>
   );
