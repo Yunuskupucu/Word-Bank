@@ -1,0 +1,1402 @@
+[
+  {
+    "word": "a",
+    "mean_tr": "bir",
+    "example_en": "a car, a flower, a table",
+    "example_tr": "bir araba, bir çiçek, bir masa",
+    "level": "A1"
+  },
+  {
+    "word": "ability",
+    "mean_tr": "kabiliyet, yetenek, beceri, güç, iktidar",
+    "example_en": "He has the ability to do the job.",
+    "example_tr": "İşi yapma yeteneği var.",
+    "level": "A2"
+  },
+  {
+    "word": "able",
+    "mean_tr": "yapabilmek, yapabilen",
+    "example_en": "I’m able to swim.",
+    "example_tr": "Yüzebilirim.",
+    "level": "A1"
+  },
+  {
+    "word": "about",
+    "mean_tr": "hakkında, ilgili, konusunda",
+    "example_en": "Tell us about Tom.",
+    "example_tr": "Bize Tom'dan bahset.",
+    "level": "A1"
+  },
+  {
+    "word": "above",
+    "mean_tr": "yukarıda",
+    "example_en": "Tom lives in the room above us.",
+    "example_tr": "Tom bizim üstümüzdeki odada yaşıyor.",
+    "level": "A2"
+  },
+  {
+    "word": "accept",
+    "mean_tr": "kabul etmek",
+    "example_en": "He accepted my idea.",
+    "example_tr": "Fikrimi kabul etti.",
+    "level": "A2"
+  },
+  {
+    "word": "according",
+    "mean_tr": "göre",
+    "example_en": "We’re proceeding according to plan.",
+    "example_tr": "Plana göre ilerliyoruz.",
+    "level": "B1"
+  },
+  {
+    "word": "account",
+    "mean_tr": "Hesap, açıklama, banka hesabı",
+    "example_en": "Here’s my account number.",
+    "example_tr": "İşte hesap numaram.",
+    "level": "A2"
+  },
+  {
+    "word": "across",
+    "mean_tr": "karşısında",
+    "example_en": "It’s across the street.",
+    "example_tr": "Caddenin karşısında.",
+    "level": "A2"
+  },
+  {
+    "word": "act",
+    "mean_tr": "hareket, eylem, davranış",
+    "example_en": "You need to act.",
+    "example_tr": "Harekete geçmelisin.",
+    "level": "A2"
+  },
+  {
+    "word": "action",
+    "mean_tr": "eylem, etki, hareket",
+    "example_en": "His action frightened us.",
+    "example_tr": "Onun hareketi bizi korkuttu.",
+    "level": "A2"
+  },
+  {
+    "word": "activity",
+    "mean_tr": "faaliyet, etkinlik",
+    "example_en": "What’s your favorite holiday activity?",
+    "example_tr": "En sevdiğin tatil etkinliği ne?",
+    "level": "A2"
+  },
+  {
+    "word": "actually",
+    "mean_tr": "aslında, gerçekte",
+    "example_en": "We never actually met.",
+    "example_tr": "Aslında hiç tanışmadık.",
+    "level": "B1"
+  },
+  {
+    "word": "add",
+    "mean_tr": "eklemek, katmak, ilave etmek, toplamak, katmak",
+    "example_en": "Add more water to it.",
+    "example_tr": "Ona daha fazla su ekle.",
+    "level": "A1"
+  },
+  {
+    "word": "address",
+    "mean_tr": "adres",
+    "example_en": "Give me Tom’s address.",
+    "example_tr": "Bana Tom'un adresini ver.",
+    "level": "A1"
+  },
+  {
+    "word": "administration",
+    "mean_tr": "yönetim, idare",
+    "example_en": "They complained about the city administration.",
+    "example_tr": "Şehir yönetiminden şikayet ettiler.",
+    "level": "B2"
+  },
+  {
+    "word": "admit",
+    "mean_tr": "Kabul etmek",
+    "example_en": "I admit my mistake.",
+    "example_tr": "Hatami kabul ediyorum.",
+    "level": "B1"
+  },
+  {
+    "word": "adult",
+    "mean_tr": "yetişkin, erişkin",
+    "example_en": "Two adult tickets, please.",
+    "example_tr": "İki yetişkin bileti lütfen.",
+    "level": "A2"
+  },
+  {
+    "word": "affect",
+    "mean_tr": "etkilemek, etki etmek",
+    "example_en": "The audience was deeply affected.",
+    "example_tr": "Seyirci derinden etkilendi.",
+    "level": "B1"
+  },
+  {
+    "word": "after",
+    "mean_tr": "sonra, ardından, daha sonra",
+    "example_en": "Repeat after me.",
+    "example_tr": "Benden sonra tekrar et.",
+    "level": "A1"
+  },
+  {
+    "word": "again",
+    "mean_tr": "tekrar, yeniden",
+    "example_en": "I’ll try again.",
+    "example_tr": "Tekrar deneyeceğim.",
+    "level": "A1"
+  },
+  {
+    "word": "against",
+    "mean_tr": "karşısında, karşı",
+    "example_en": "It’s against the rules.",
+    "example_tr": "Kurallara aykırı.",
+    "level": "B1"
+  },
+  {
+    "word": "age",
+    "mean_tr": "yaş",
+    "example_en": "Tom is my age.",
+    "example_tr": "Tom benim yaşımda.",
+    "level": "A1"
+  },
+  {
+    "word": "agency",
+    "mean_tr": "Ajans, acenta",
+    "example_en": "Tom started an advertising agency.",
+    "example_tr": "Tom bir reklam ajansı kurdu.",
+    "level": "B2"
+  },
+  {
+    "word": "agent",
+    "mean_tr": "Ajan, temsilci, etken",
+    "example_en": "He is an FBI agent.",
+    "example_tr": "O bir FBI ajanı.",
+    "level": "B2"
+  },
+  {
+    "word": "ago",
+    "mean_tr": "önce, evvel",
+    "example_en": "Tom left an hour ago.",
+    "example_tr": "Tom bir saat önce ayrıldı.",
+    "level": "A2"
+  },
+  {
+    "word": "agree",
+    "mean_tr": "anlaşmak, kabul etmek",
+    "example_en": "Tom and Mary agree.",
+    "example_tr": "Tom ve Mary anlaşıyor.",
+    "level": "A2"
+  },
+  {
+    "word": "agreement",
+    "mean_tr": "Anlaşma, sözleşme",
+    "example_en": "That was our agreement.",
+    "example_tr": "Anlaşmamız buydu.",
+    "level": "B1"
+  },
+  {
+    "word": "ahead",
+    "mean_tr": "Önde, ileri",
+    "example_en": "Go ahead and ask Tom.",
+    "example_tr": "Devam et ve Tom'a sor.",
+    "level": "B1"
+  },
+  {
+    "word": "air",
+    "mean_tr": "hava",
+    "example_en": "We need fresh air.",
+    "example_tr": "Temiz havaya ihtiyacımız var.",
+    "level": "A1"
+  },
+  {
+    "word": "all",
+    "mean_tr": "herşey, tüm, bütün",
+    "example_en": "Is that all?",
+    "example_tr": "Hepsi bu kadar mı?",
+    "level": "A1"
+  },
+  {
+    "word": "allow",
+    "mean_tr": "izin vermek",
+    "example_en": "I can’t allow you to do that.",
+    "example_tr": "Bunu yapmana izin veremem.",
+    "level": "A2"
+  },
+  {
+    "word": "almost",
+    "mean_tr": "neredeyse, hemen hemen",
+    "example_en": "It’s almost 2:30.",
+    "example_tr": "Saat neredeyse 2:30.",
+    "level": "A2"
+  },
+  {
+    "word": "alone",
+    "mean_tr": "yalnız, tek başına",
+    "example_en": "I live alone.",
+    "example_tr": "Yalnız yaşıyorum.",
+    "level": "A2"
+  },
+  {
+    "word": "along",
+    "mean_tr": "boyunca, yanı sıra",
+    "example_en": "Come along with me.",
+    "example_tr": "Benimle gel.",
+    "level": "A2"
+  },
+  {
+    "word": "already",
+    "mean_tr": "zaten",
+    "example_en": "It’s already 7:00.",
+    "example_tr": "Saat zaten 7:00.",
+    "level": "A2"
+  },
+  {
+    "word": "also",
+    "mean_tr": "ayrıca, hem de",
+    "example_en": "I also like candy.",
+    "example_tr": "Ben de şeker severim.",
+    "level": "A1"
+  },
+  {
+    "word": "although",
+    "mean_tr": "rağmen, karşın , gerçi",
+    "example_en": "Although it rained, everyone had a good time.",
+    "example_tr": "Yağmur yağmasına rağmen herkes iyi vakit geçirdi.",
+    "level": "B1"
+  },
+  {
+    "word": "always",
+    "mean_tr": "her zaman, daima",
+    "example_en": "He’s always busy.",
+    "example_tr": "Her zaman meşgul.",
+    "level": "A1"
+  },
+  {
+    "word": "American",
+    "mean_tr": "Amerikan",
+    "example_en": "I’m an American; we don’t have masters.",
+    "example_tr": "Ben Amerikalıyım; efendimiz yok.",
+    "level": "A1"
+  },
+  {
+    "word": "among",
+    "mean_tr": "arasında, içinde",
+    "example_en": "Divide the cake among you three.",
+    "example_tr": "Pastayı üçünüz arasında bölüşün.",
+    "level": "B1"
+  },
+  {
+    "word": "amount",
+    "mean_tr": "miktar, tutar, değer",
+    "example_en": "This amount includes tax.",
+    "example_tr": "Bu miktar vergiyi içerir.",
+    "level": "B1"
+  },
+  {
+    "word": "analysis",
+    "mean_tr": "analiz, çözümleme",
+    "example_en": "After careful analysis, he decided not to go.",
+    "example_tr": "Dikkatli bir analizden sonra gitmemeye karar verdi.",
+    "level": "B2"
+  },
+  {
+    "word": "and",
+    "mean_tr": "ve, ile",
+    "example_en": "Come and see.",
+    "example_tr": "Gel ve gör.",
+    "level": "A1"
+  },
+  {
+    "word": "animal",
+    "mean_tr": "hayvan",
+    "example_en": "I love animals.",
+    "example_tr": "Hayvanları severim.",
+    "level": "A1"
+  },
+  {
+    "word": "another",
+    "mean_tr": "bir diğeri, başka, farklı, ayrı",
+    "example_en": "I need another job.",
+    "example_tr": "Başka bir işe ihtiyacım var.",
+    "level": "A1"
+  },
+  {
+    "word": "answer",
+    "mean_tr": "cevap, yanıt",
+    "example_en": "Answer the phone.",
+    "example_tr": "Telefona cevap ver.",
+    "level": "A1"
+  },
+  {
+    "word": "any",
+    "mean_tr": "herhangi, hiç, her",
+    "example_en": "Is there any sugar?",
+    "example_tr": "Hiç şeker var mı?",
+    "level": "A1"
+  },
+  {
+    "word": "anyone",
+    "mean_tr": "kimse, herhangi biri, hiç kimse",
+    "example_en": "Anyone home?",
+    "example_tr": "Evde kimse var mı?",
+    "level": "A2"
+  },
+  {
+    "word": "anything",
+    "mean_tr": "bir şeyi herhangi bir şey, hiçbir şey",
+    "example_en": "Can I do anything?",
+    "example_tr": "Herhangi bir şey yapabilir miyim?",
+    "level": "A2"
+  },
+  {
+    "word": "appear",
+    "mean_tr": "görünmek, gözükmek",
+    "example_en": "Tom sometimes appears on TV.",
+    "example_tr": "Tom bazen TV'de görünür.",
+    "level": "B1"
+  },
+  {
+    "word": "apply",
+    "mean_tr": "uygulamak, başvurmak",
+    "example_en": "I’d like to apply for a job.",
+    "example_tr": "Bir işe başvurmak istiyorum.",
+    "level": "B1"
+  },
+  {
+    "word": "approach",
+    "mean_tr": "yaklaşım, yaklaşma",
+    "example_en": "Don’t approach the dog.",
+    "example_tr": "Köpeğe yaklaşma.",
+    "level": "B1"
+  },
+  {
+    "word": "area",
+    "mean_tr": "alan, bölge",
+    "example_en": "There is no beach in this area.",
+    "example_tr": "Bu bölgede plaj yok.",
+    "level": "A2"
+  },
+  {
+    "word": "argue",
+    "mean_tr": "tartışmak",
+    "example_en": "I don’t have time to argue.",
+    "example_tr": "Tartışmaya zamanım yok.",
+    "level": "B1"
+  },
+  {
+    "word": "arm",
+    "mean_tr": "kol, silah, dal",
+    "example_en": "Tom broke his arm.",
+    "example_tr": "Tom kolunu kırdı.",
+    "level": "A2"
+  },
+  {
+    "word": "around",
+    "mean_tr": "etrafında",
+    "example_en": "I left around 2:30.",
+    "example_tr": "2:30 civarında ayrıldım.",
+    "level": "A1"
+  },
+  {
+    "word": "arrive",
+    "mean_tr": "varmak, ulaşmak",
+    "example_en": "Tom arrives today.",
+    "example_tr": "Tom bugün varıyor.",
+    "level": "A2"
+  },
+  {
+    "word": "art",
+    "mean_tr": "sanat",
+    "example_en": "Last week I visited a beautiful art store.",
+    "example_tr": "Geçen hafta güzel bir sanat mağazasını ziyaret ettim.",
+    "level": "A2"
+  },
+  {
+    "word": "article",
+    "mean_tr": "makale, madde, yazı",
+    "example_en": "The article was written in French.",
+    "example_tr": "Makale Fransızca yazılmıştı.",
+    "level": "B1"
+  },
+  {
+    "word": "artist",
+    "mean_tr": "sanatçı",
+    "example_en": "Tom wants to be a tattoo artist.",
+    "example_tr": "Tom bir dövme sanatçısı olmak istiyor.",
+    "level": "A2"
+  },
+  {
+    "word": "as",
+    "mean_tr": "gibi, olarak",
+    "example_en": "Do as you like.",
+    "example_tr": "Dilediğin gibi yap.",
+    "level": "A1"
+  },
+  {
+    "word": "ask",
+    "mean_tr": "sormak, istemek",
+    "example_en": "Don’t ask.",
+    "example_tr": "Sorma.",
+    "level": "A1"
+  },
+  {
+    "word": "assume",
+    "mean_tr": "varsaymak, farzetmek",
+    "example_en": "I assume you’re angry.",
+    "example_tr": "Kızgın olduğunu varsayıyorum.",
+    "level": "B1"
+  },
+  {
+    "word": "attack",
+    "mean_tr": "saldırı, atak",
+    "example_en": "We’re under attack.",
+    "example_tr": "Saldırı altındayız.",
+    "level": "B1"
+  },
+  {
+    "word": "attention",
+    "mean_tr": "dikkat",
+    "example_en": "Pay attention.",
+    "example_tr": "Dikkat et.",
+    "level": "A2"
+  },
+  {
+    "word": "attorney",
+    "mean_tr": "avukat, vekil",
+    "example_en": "I’m an attorney.",
+    "example_tr": "Ben bir avukatım.",
+    "level": "B2"
+  },
+  {
+    "word": "audience",
+    "mean_tr": "seyirci, izleyici",
+    "example_en": "The audience was deeply affected.",
+    "example_tr": "Seyirci derinden etkilendi.",
+    "level": "B1"
+  },
+  {
+    "word": "author",
+    "mean_tr": "yazar",
+    "example_en": "Who is your favorite author?",
+    "example_tr": "En sevdiğin yazar kim?",
+    "level": "B1"
+  },
+  {
+    "word": "authority",
+    "mean_tr": "yetki, otorite",
+    "example_en": "I have the authority to do this.",
+    "example_tr": "Bunu yapma yetkim var.",
+    "level": "B2"
+  },
+  {
+    "word": "available",
+    "mean_tr": "müsait, mevcut, geçerli",
+    "example_en": "Are seats available?",
+    "example_tr": "Koltuklar müsait mi?",
+    "level": "A2"
+  },
+  {
+    "word": "avoid",
+    "mean_tr": "önlemek, kaçınmak",
+    "example_en": "I’m trying to avoid Tom.",
+    "example_tr": "Tom'dan kaçınmaya çalışıyorum.",
+    "level": "B1"
+  },
+  {
+    "word": "away",
+    "mean_tr": "uzak, uzakta",
+    "example_en": "Take that away.",
+    "example_tr": "Onu uzaklaştır.",
+    "level": "A2"
+  },
+  {
+    "word": "baby",
+    "mean_tr": "bebek",
+    "example_en": "The baby is crying.",
+    "example_tr": "Bebek ağlıyor.",
+    "level": "A1"
+  },
+  {
+    "word": "back",
+    "mean_tr": "geri",
+    "example_en": "Turn back from here.",
+    "example_tr": "Buradan geri dön.",
+    "level": "A1"
+  },
+  {
+    "word": "bad",
+    "mean_tr": "kötü",
+    "example_en": "The weather will be bad today.",
+    "example_tr": "Bugün hava kötü olacak.",
+    "level": "A1"
+  },
+  {
+    "word": "bag",
+    "mean_tr": "sırt çantası",
+    "example_en": "Do not forget your bag.",
+    "example_tr": "Çantanı unutma.",
+    "level": "A1"
+  },
+  {
+    "word": "ball",
+    "mean_tr": "top",
+    "example_en": "The ball is in your court now.",
+    "example_tr": "Top şimdi sende.",
+    "level": "A1"
+  },
+  {
+    "word": "bank",
+    "mean_tr": "banka",
+    "example_en": "Her bank account is zero.",
+    "example_tr": "Banka hesabı sıfır.",
+    "level": "A1"
+  },
+  {
+    "word": "bar",
+    "mean_tr": "bar",
+    "example_en": "He sat on the bar.",
+    "example_tr": "Bara oturdu.",
+    "level": "A2"
+  },
+  {
+    "word": "base",
+    "mean_tr": "üs, temel, baz",
+    "example_en": "He is working in the navy base.",
+    "example_tr": "Donanma üssünde çalışıyor.",
+    "level": "B1"
+  },
+  {
+    "word": "be",
+    "mean_tr": "olmak, var olmak",
+    "example_en": "Be quite.",
+    "example_tr": "Sessiz ol.",
+    "level": "A1"
+  },
+  {
+    "word": "beat",
+    "mean_tr": "dövmek, yenmek",
+    "example_en": "We beat them.",
+    "example_tr": "Onları yendik.",
+    "level": "A2"
+  },
+  {
+    "word": "beautiful",
+    "mean_tr": "güzel",
+    "example_en": "The weather is beautiful today.",
+    "example_tr": "Bugün hava çok güzel.",
+    "level": "A1"
+  },
+  {
+    "word": "because",
+    "mean_tr": "çünkü",
+    "example_en": "I do it because I want to.",
+    "example_tr": "İstediğim için yapıyorum.",
+    "level": "A1"
+  },
+  {
+    "word": "become",
+    "mean_tr": "olmak, haline gelmek",
+    "example_en": "It’s become dark.",
+    "example_tr": "Hava karardı.",
+    "level": "A2"
+  },
+  {
+    "word": "bed",
+    "mean_tr": "yatak",
+    "example_en": "Go to bed before 12:00.",
+    "example_tr": "Saat 12:00'den önce yat.",
+    "level": "A1"
+  },
+  {
+    "word": "before",
+    "mean_tr": "önce",
+    "example_en": "Go to bed before 12:00.",
+    "example_tr": "Saat 12:00'den önce yat.",
+    "level": "A1"
+  },
+  {
+    "word": "begin",
+    "mean_tr": "başlamak, başlatmak",
+    "example_en": "Let’s begin.",
+    "example_tr": "Hadi başlayalım.",
+    "level": "A1"
+  },
+  {
+    "word": "behavior",
+    "mean_tr": "davranış, tutum, hareket",
+    "example_en": "I don’t speak with because of his behaviour.",
+    "example_tr": "Davranışları yüzünden onunla konuşmuyorum.",
+    "level": "B1"
+  },
+  {
+    "word": "behind",
+    "mean_tr": "arkasında, gerisinde",
+    "example_en": "Stay behind the wall.",
+    "example_tr": "Duvarın arkasında kal.",
+    "level": "A2"
+  },
+  {
+    "word": "believe",
+    "mean_tr": "inanmak, inancı olmak",
+    "example_en": "Believe me, it is true.",
+    "example_tr": "İnan bana, bu doğru.",
+    "level": "A1"
+  },
+  {
+    "word": "benefit",
+    "mean_tr": "yarar, fayda",
+    "example_en": "I can benefit from your experience.",
+    "example_tr": "Deneyiminden faydalanabilirim.",
+    "level": "B1"
+  },
+  {
+    "word": "best",
+    "mean_tr": "en iyi, en iyisi, en",
+    "example_en": "I am the best player in the team.",
+    "example_tr": "Takımdaki en iyi oyuncuyum.",
+    "level": "A2"
+  },
+  {
+    "word": "better",
+    "mean_tr": "daha iyi, daha güzel, daha iyi şekilde",
+    "example_en": "He is better than me.",
+    "example_tr": "Benden daha iyi.",
+    "level": "A2"
+  },
+  {
+    "word": "between",
+    "mean_tr": "arasında, aralarında",
+    "example_en": "Choose between this two colors.",
+    "example_tr": "Bu iki renk arasından seç.",
+    "level": "A1"
+  },
+  {
+    "word": "beyond",
+    "mean_tr": "ötesinde, öte",
+    "example_en": "My house is beyond that bridge.",
+    "example_tr": "Evim o köprünün ötesinde.",
+    "level": "B1"
+  },
+  {
+    "word": "big",
+    "mean_tr": "büyük",
+    "example_en": "How big is it?",
+    "example_tr": "Ne kadar büyük?",
+    "level": "A1"
+  },
+  {
+    "word": "bill",
+    "mean_tr": "Fatura",
+    "example_en": "I have to pay the internet bill.",
+    "example_tr": "İnternet faturasını ödemek zorundayım.",
+    "level": "A2"
+  },
+  {
+    "word": "billion",
+    "mean_tr": "milyar",
+    "example_en": "One in a billion.",
+    "example_tr": "Milyarda bir.",
+    "level": "B1"
+  },
+  {
+    "word": "black",
+    "mean_tr": "siyah",
+    "example_en": "Do you see the black clouds.",
+    "example_tr": "Siyah bulutları görüyor musun?",
+    "level": "A1"
+  },
+  {
+    "word": "blood",
+    "mean_tr": "kan",
+    "example_en": "My blood type is Orh+.",
+    "example_tr": "Kan grubum 0 Rh+.",
+    "level": "A2"
+  },
+  {
+    "word": "blue",
+    "mean_tr": "mavi",
+    "example_en": "The sky is blue.",
+    "example_tr": "Gökyüzü mavi.",
+    "level": "A1"
+  },
+  {
+    "word": "board",
+    "mean_tr": "yazı tahtası",
+    "example_en": "Clean the board please.",
+    "example_tr": "Tahtayı temizle lütfen.",
+    "level": "A1"
+  },
+  {
+    "word": "body",
+    "mean_tr": "vücut",
+    "example_en": "He has a strong body.",
+    "example_tr": "Güçlü bir vücudu var.",
+    "level": "A2"
+  },
+  {
+    "word": "book",
+    "mean_tr": "kitap",
+    "example_en": "Open your books.",
+    "example_tr": "Kitaplarınızı açın.",
+    "level": "A1"
+  },
+  {
+    "word": "born",
+    "mean_tr": "doğmuş, doğum",
+    "example_en": "I was born in 2000.",
+    "example_tr": "2000 yılında doğdum.",
+    "level": "A1"
+  },
+  {
+    "word": "both",
+    "mean_tr": "her ikisi de, ikisi de",
+    "example_en": "They both smile.",
+    "example_tr": "İkisi de gülümsüyor.",
+    "level": "A1"
+  },
+  {
+    "word": "box",
+    "mean_tr": "kutu",
+    "example_en": "Your gift is in that red box.",
+    "example_tr": "Hediyen o kırmızı kutuda.",
+    "level": "A1"
+  },
+  {
+    "word": "boy",
+    "mean_tr": "erkek çocuk",
+    "example_en": "Boys are playing football.",
+    "example_tr": "Erkekler futbol oynuyor.",
+    "level": "A1"
+  },
+  {
+    "word": "break",
+    "mean_tr": "kırılma",
+    "example_en": "Who broke the glass?",
+    "example_tr": "Bardağı kim kırdı?",
+    "level": "A2"
+  },
+  {
+    "word": "bring",
+    "mean_tr": "getirmek",
+    "example_en": "Bring your bag with you.",
+    "example_tr": "Çantanı yanında getir.",
+    "level": "A1"
+  },
+  {
+    "word": "brother",
+    "mean_tr": "erkek kardeş",
+    "example_en": "I have 2 brothers and one sister.",
+    "example_tr": "2 erkek kardeşim ve bir kız kardeşim var.",
+    "level": "A1"
+  },
+  {
+    "word": "budget",
+    "mean_tr": "bütçe",
+    "example_en": "We are traveling on a tight budget.",
+    "example_tr": "Sıkı bir bütçeyle seyahat ediyoruz.",
+    "level": "B2"
+  },
+  {
+    "word": "build",
+    "mean_tr": "inşa etmek",
+    "example_en": "They are building a new house.",
+    "example_tr": "Yeni bir ev inşa ediyorlar.",
+    "level": "A2"
+  },
+  {
+    "word": "building",
+    "mean_tr": "bina",
+    "example_en": "The building is very high.",
+    "example_tr": "Bina çok yüksek.",
+    "level": "A2"
+  },
+  {
+    "word": "business",
+    "mean_tr": "iş",
+    "example_en": "I have a business English course tonight.",
+    "example_tr": "Bu akşam bir iş İngilizcesi kursum var.",
+    "level": "A2"
+  },
+  {
+    "word": "but",
+    "mean_tr": "fakat, ama, lakin",
+    "example_en": "I want to come but it is too late.",
+    "example_tr": "Gelmek istiyorum ama çok geç.",
+    "level": "A1"
+  },
+  {
+    "word": "buy",
+    "mean_tr": "satın almak",
+    "example_en": "Can I buy this one?",
+    "example_tr": "Bunu satın alabilir miyim?",
+    "level": "A1"
+  },
+  {
+    "word": "by",
+    "mean_tr": "tarafından, ile, göre, vasıtasıyla",
+    "example_en": "He came by bus.",
+    "example_tr": "Otobüsle geldi.",
+    "level": "A1"
+  },
+  {
+    "word": "call",
+    "mean_tr": "aramak",
+    "example_en": "Can you call her?",
+    "example_tr": "Onu arayabilir misin?",
+    "level": "A1"
+  },
+  {
+    "word": "camera",
+    "mean_tr": "kamera",
+    "example_en": "Turn off the camera please.",
+    "example_tr": "Lütfen kamerayı kapatın.",
+    "level": "A1"
+  },
+  {
+    "word": "campaign",
+    "mean_tr": "kampanya",
+    "example_en": "Did you take part in the campaign?",
+    "example_tr": "Kampanyaya katıldın mı?",
+    "level": "B2"
+  },
+  {
+    "word": "can",
+    "mean_tr": "yapabilmek",
+    "example_en": "I can do it.",
+    "example_tr": "Bunu yapabilirim.",
+    "level": "A1"
+  },
+  {
+    "word": "cancer",
+    "mean_tr": "kanser",
+    "example_en": "Cancer of the Stomach is a common disease.",
+    "example_tr": "Mide kanseri yaygın bir hastalıktır.",
+    "level": "B2"
+  },
+  {
+    "word": "candidate",
+    "mean_tr": "aday",
+    "example_en": "Michael was the perfect candidate.",
+    "example_tr": "Michael mükemmel bir adaydı.",
+    "level": "B2"
+  },
+  {
+    "word": "capital",
+    "mean_tr": "Başkent",
+    "example_en": "The capital was the center of the commercial activities.",
+    "example_tr": "Başkent ticari faaliyetlerin merkeziydi.",
+    "level": "B1"
+  },
+  {
+    "word": "car",
+    "mean_tr": "Araba",
+    "example_en": "Her car was in full view.",
+    "example_tr": "Arabası tam görünürdeydi.",
+    "level": "A1"
+  },
+  {
+    "word": "card",
+    "mean_tr": "Kart",
+    "example_en": "A Christmas card come to life.",
+    "example_tr": "Canlanan bir Noel kartı.",
+    "level": "A1"
+  },
+  {
+    "word": "care",
+    "mean_tr": "bakım",
+    "example_en": "He will not care.",
+    "example_tr": "Umursamayacak.",
+    "level": "A2"
+  },
+  {
+    "word": "career",
+    "mean_tr": "kariyer",
+    "example_en": "She had a short career as a writer.",
+    "example_tr": "Yazar olarak kısa bir kariyeri oldu.",
+    "level": "B1"
+  },
+  {
+    "word": "carry",
+    "mean_tr": "Taşımak",
+    "example_en": "I bid you carry it to him.",
+    "example_tr": "Ona götürmeni emrediyorum.",
+    "level": "A2"
+  },
+  {
+    "word": "case",
+    "mean_tr": "dava",
+    "example_en": "Don’t plead my case for me.",
+    "example_tr": "Benim için davamı savunma.",
+    "level": "B1"
+  },
+  {
+    "word": "catch",
+    "mean_tr": "yakalamak",
+    "example_en": "Catch hold from underneath.",
+    "example_tr": "Alttan tut.",
+    "level": "A2"
+  },
+  {
+    "word": "cause",
+    "mean_tr": "sebep olmak",
+    "example_en": "All I do is cause pain.",
+    "example_tr": "Tüm yaptığım acıya sebep olmak.",
+    "level": "B1"
+  },
+  {
+    "word": "cell",
+    "mean_tr": "hücre",
+    "example_en": "The cell reproduced and the organism grew.",
+    "example_tr": "Hücre çoğaldı ve organizma büyüdü.",
+    "level": "B2"
+  },
+  {
+    "word": "center",
+    "mean_tr": "merkez",
+    "example_en": "This way, around the center of the lake.",
+    "example_tr": "Bu yol, gölün merkezi etrafında.",
+    "level": "A2"
+  },
+  {
+    "word": "central",
+    "mean_tr": "merkezi",
+    "example_en": "After the war, it remained a central hub.",
+    "example_tr": "Savaştan sonra, merkezi bir merkez olarak kaldı.",
+    "level": "B1"
+  },
+  {
+    "word": "century",
+    "mean_tr": "Yüzyıl",
+    "example_en": "A century later, machines entered the scene.",
+    "example_tr": "Bir yüzyıl sonra, makineler sahneye çıktı.",
+    "level": "B1"
+  },
+  {
+    "word": "certain",
+    "mean_tr": "Belli",
+    "example_en": "I feel certain of it.",
+    "example_tr": "Bundan eminim.",
+    "level": "B1"
+  },
+  {
+    "word": "certainly",
+    "mean_tr": "kesinlikle",
+    "example_en": "She certainly didn’t feel any different.",
+    "example_tr": "Kesinlikle farklı hissetmedi.",
+    "level": "B1"
+  },
+  {
+    "word": "chair",
+    "mean_tr": "sandalye",
+    "example_en": "He leaned forward in his chair, sobering.",
+    "example_tr": "Sandalyesinde öne eğildi, ayılırken.",
+    "level": "A1"
+  },
+  {
+    "word": "challenge",
+    "mean_tr": "meydan okuma",
+    "example_en": "I like a challenge once in a while.",
+    "example_tr": "Arada sırada bir meydan okuma severim.",
+    "level": "B2"
+  },
+  {
+    "word": "chance",
+    "mean_tr": "Şans",
+    "example_en": "You had your chance to solve it on your own.",
+    "example_tr": "Kendi başına çözme şansın vardı.",
+    "level": "A2"
+  },
+  {
+    "word": "change",
+    "mean_tr": "değişiklik",
+    "example_en": "He was struck by the change in him.",
+    "example_tr": "Ondaki değişimden etkilendi.",
+    "level": "A1"
+  },
+  {
+    "word": "character",
+    "mean_tr": "karakter",
+    "example_en": "It was totally out of character for her.",
+    "example_tr": "Bu onun karakterine hiç uymuyordu.",
+    "level": "B1"
+  },
+  {
+    "word": "charge",
+    "mean_tr": "şarj etmek",
+    "example_en": "I will be in charge of your initiation.",
+    "example_tr": "Sizin başlatmanızdan ben sorumlu olacağım.",
+    "level": "B1"
+  },
+  {
+    "word": "check",
+    "mean_tr": "Kontrol",
+    "example_en": "I’ll check that too.",
+    "example_tr": "Onu da kontrol edeceğim.",
+    "level": "A2"
+  },
+  {
+    "word": "child",
+    "mean_tr": "çocuk",
+    "example_en": "This child has a wonderful gift.",
+    "example_tr": "Bu çocuğun harika bir hediyesi var.",
+    "level": "A1"
+  },
+  {
+    "word": "choice",
+    "mean_tr": "seçim",
+    "example_en": "At that moment there was a choice to make.",
+    "example_tr": "O anda bir seçim yapılması gerekiyordu.",
+    "level": "A2"
+  },
+  {
+    "word": "choose",
+    "mean_tr": "seçmek",
+    "example_en": "I had hoped he’d choose your sister.",
+    "example_tr": "Kız kardeşini seçeceğini ummuştum.",
+    "level": "A2"
+  },
+  {
+    "word": "church",
+    "mean_tr": "kilise",
+    "example_en": "Are you all going to church this morning?",
+    "example_tr": "Bu sabah hepiniz kiliseye mi gidiyorsunuz?",
+    "level": "A2"
+  },
+  {
+    "word": "citizen",
+    "mean_tr": "vatandaş",
+    "example_en": "You’re a private citizen in a few days.",
+    "example_tr": "Birkaç gün içinde özel bir vatandaş olacaksın.",
+    "level": "B2"
+  },
+  {
+    "word": "city",
+    "mean_tr": "şehir",
+    "example_en": "You should have called the city cops.",
+    "example_tr": "Şehir polislerini aramalısın.",
+    "level": "A1"
+  },
+  {
+    "word": "civil",
+    "mean_tr": "sivil",
+    "example_en": "The last civil war set us back fifty years.",
+    "example_tr": "Son iç savaş bizi elli yıl geriye götürdü.",
+    "level": "B2"
+  },
+  {
+    "word": "claim",
+    "mean_tr": "iddia",
+    "example_en": "She went to claim it.",
+    "example_tr": "Onu talep etmeye gitti.",
+    "level": "B2"
+  },
+  {
+    "word": "class",
+    "mean_tr": "sınıf",
+    "example_en": "He skipped the class on good nom de plumes.",
+    "example_tr": "İyi takma adlar hakkındaki dersi atladı.",
+    "level": "A1"
+  },
+  {
+    "word": "clear",
+    "mean_tr": "açık",
+    "example_en": "It was clear and frosty.",
+    "example_tr": "Açık ve ayazdı.",
+    "level": "A2"
+  },
+  {
+    "word": "clearly",
+    "mean_tr": "Açıkça",
+    "example_en": "His expression was clearly displeased.",
+    "example_tr": "İfadesi açıkça hoşnutsuzdu.",
+    "level": "B1"
+  },
+  {
+    "word": "close",
+    "mean_tr": "kapat",
+    "example_en": "Close our eyes, count to five.",
+    "example_tr": "Gözlerimizi kapat, beşe kadar say.",
+    "level": "A1"
+  },
+  {
+    "word": "coach",
+    "mean_tr": "Koç",
+    "example_en": "Do you have a coach?",
+    "example_tr": "Bir koçun var mı?",
+    "level": "A2"
+  },
+  {
+    "word": "cold",
+    "mean_tr": "soğuk",
+    "example_en": "It was cold in the cave.",
+    "example_tr": "Mağarada soğuktu.",
+    "level": "A1"
+  },
+  {
+    "word": "collection",
+    "mean_tr": "Toplamak",
+    "example_en": "Vogt published a collection of Bugenhagen’s correspondence in 1888",
+    "example_tr": "Vogt, 1888'de Bugenhagen'in yazışmalarının bir koleksiyonunu yayımladı.",
+    "level": "B1"
+  },
+  {
+    "word": "college",
+    "mean_tr": "kolej",
+    "example_en": "She’ll be going to college next month.",
+    "example_tr": "Gelecek ay üniversiteye gidecek.",
+    "level": "A2"
+  },
+  {
+    "word": "color",
+    "mean_tr": "renk",
+    "example_en": "The color is amazing.",
+    "example_tr": "Renk harika.",
+    "level": "A1"
+  },
+  {
+    "word": "come",
+    "mean_tr": "gelmek",
+    "example_en": "I can come back.",
+    "example_tr": "Geri gelebilirim.",
+    "level": "A1"
+  },
+  {
+    "word": "commercial",
+    "mean_tr": "ticari",
+    "example_en": "The capital was the center of the commercial activities.",
+    "example_tr": "Başkent ticari faaliyetlerin merkeziydi.",
+    "level": "B2"
+  },
+  {
+    "word": "common",
+    "mean_tr": "ortak",
+    "example_en": "She will only utilize it for common good.",
+    "example_tr": "Bunu sadece ortak iyilik için kullanacak.",
+    "level": "B1"
+  },
+  {
+    "word": "community",
+    "mean_tr": "Topluluk",
+    "example_en": "To her surprise, the condo community was as quiet as the night she left.",
+    "example_tr": "Şaşkınlığına göre, apartman topluluğu ayrıldığı gece kadar sessizdi.",
+    "level": "B2"
+  },
+  {
+    "word": "company",
+    "mean_tr": "Şirket",
+    "example_en": "She joined the company last year.",
+    "example_tr": "Geçen yıl şirkete katıldı.",
+    "level": "A2"
+  },
+  {
+    "word": "compare",
+    "mean_tr": "karşılaştırmak",
+    "example_en": "I don’t compare you to Josh.",
+    "example_tr": "Seni Josh ile karşılaştırmıyorum.",
+    "level": "B1"
+  },
+  {
+    "word": "computer",
+    "mean_tr": "bilgisayar",
+    "example_en": "Yes, and I ordered a computer for you too.",
+    "example_tr": "Evet, sana da bir bilgisayar sipariş ettim.",
+    "level": "A1"
+  },
+  {
+    "word": "concern",
+    "mean_tr": "ilgilendirmek",
+    "example_en": "So there’s no concern these visions may stop completely?",
+    "example_tr": "Yani bu vizyonların tamamen durabileceğine dair bir endişe yok mu?",
+    "level": "B2"
+  },
+  {
+    "word": "condition",
+    "mean_tr": "şart",
+    "example_en": "Do you know the condition I am in?",
+    "example_tr": "İçinde bulunduğum durumu biliyor musun?",
+    "level": "B1"
+  },
+  {
+    "word": "conference",
+    "mean_tr": "konferans",
+    "example_en": "Death dude sat at the back of the conference room, out of the glare of the screen.",
+    "example_tr": "Ölüm adamı konferans salonunun arkasında, ekranın parlamasından uzakta oturdu.",
+    "level": "B2"
+  },
+  {
+    "word": "Congress",
+    "mean_tr": "Kongre",
+    "example_en": "The Berlin congress decided that it should remain with Servia.",
+    "example_tr": "Berlin kongresi, Sırbistan ile kalmasına karar verdi.",
+    "level": "C1"
+  },
+  {
+    "word": "consider",
+    "mean_tr": "göz önüne almak",
+    "example_en": "It was too far to consider driving every day, even if she had a car.",
+    "example_tr": "Her gün araba kullanmayı düşünmek çok uzaktı, arabası olmasa bile.",
+    "level": "B1"
+  },
+  {
+    "word": "consumer",
+    "mean_tr": "tüketici",
+    "example_en": "There was a rising worldwide consumption of consumer goods.",
+    "example_tr": "Dünya genelinde tüketici mallarının artan bir tüketimi vardı.",
+    "level": "B2"
+  },
+  {
+    "word": "contain",
+    "mean_tr": "içermek",
+    "example_en": "Fred could hardly contain his excitement.",
+    "example_tr": "Fred heyecanını zar zor zaptedebiliyordu.",
+    "level": "B1"
+  },
+  {
+    "word": "continue",
+    "mean_tr": "devam et",
+    "example_en": "He would continue until he was satisfied.",
+    "example_tr": "Memnun olana kadar devam edecekti.",
+    "level": "A2"
+  },
+  {
+    "word": "control",
+    "mean_tr": "kontrol",
+    "example_en": "I can’t control it yet.",
+    "example_tr": "Henüz kontrol edemiyorum.",
+    "level": "A2"
+  },
+  {
+    "word": "cost",
+    "mean_tr": "maliyet",
+    "example_en": "It must have cost a fortune!",
+    "example_tr": "Servet değerinde olmalıydı!",
+    "level": "A2"
+  },
+  {
+    "word": "could",
+    "mean_tr": "Yapabilir",
+    "example_en": "What could he do about it but lose more sleep?",
+    "example_tr": "Bunun hakkında daha fazla uyku kaybetmekten başka ne yapabilirdi?",
+    "level": "A1"
+  },
+  {
+    "word": "country",
+    "mean_tr": "Ülke",
+    "example_en": "The country was wild and beautiful.",
+    "example_tr": "Ülke vahşi ve güzeldi.",
+    "level": "A1"
+  },
+  {
+    "word": "couple",
+    "mean_tr": "çift",
+    "example_en": "I have a couple of polo shirts, but no light shirts.",
+    "example_tr": "Birkaç polo tişörtüm var ama açık renk tişörtüm yok.",
+    "level": "A2"
+  },
+  {
+    "word": "course",
+    "mean_tr": "ders",
+    "example_en": "Its course down the cliff was marked by the cracking of limbs.",
+    "example_tr": "Uçurumdan aşağıya doğru seyri, uzuvların çatlamasıyla işaretlendi.",
+    "level": "A2"
+  },
+  {
+    "word": "court",
+    "mean_tr": "mahkeme",
+    "example_en": "“The ball is in your court,” I said.",
+    "example_tr": "“Top sende,” dedim.",
+    "level": "B1"
+  },
+  {
+    "word": "cover",
+    "mean_tr": "örtü",
+    "example_en": "Deep from the fire-bars to the cover.",
+    "example_tr": "Ateş çubuklarından örtüye kadar derin.",
+    "level": "A2"
+  },
+  {
+    "word": "create",
+    "mean_tr": "yaratmak",
+    "example_en": "Trading is able to create value for two reasons.",
+    "example_tr": "Ticaret iki nedenden dolayı değer yaratabilir.",
+    "level": "B1"
+  },
+  {
+    "word": "crime",
+    "mean_tr": "suç",
+    "example_en": "The crime had begun and must now be completed.",
+    "example_tr": "Suç başlamıştı ve şimdi tamamlanmalıydı.",
+    "level": "B1"
+  },
+  {
+    "word": "cultural",
+    "mean_tr": "kültürel",
+    "example_en": "This gave people a shared set of cultural references.",
+    "example_tr": "Bu, insanlara ortak bir kültürel referanslar seti sağladı.",
+    "level": "B2"
+  },
+  {
+    "word": "culture",
+    "mean_tr": "kültür",
+    "example_en": "If only she understood our culture better.",
+    "example_tr": "Keşke kültürümüzü daha iyi anlasaydı.",
+    "level": "B1"
+  },
+  {
+    "word": "cup",
+    "mean_tr": "fincan",
+    "example_en": "He took the cup from her hand.",
+    "example_tr": "Bardağı elinden aldı.",
+    "level": "A1"
+  },
+  {
+    "word": "current",
+    "mean_tr": "şu andaki",
+    "example_en": "This is the current battle situation.",
+    "example_tr": "Bu, şu anki savaş durumu.",
+    "level": "B1"
+  },
+  {
+    "word": "customer",
+    "mean_tr": "müşteri",
+    "example_en": "They suggest other products a customer might be interested in.",
+    "example_tr": "Bir müşterinin ilgilenebileceği başka ürünler öneriyorlar.",
+    "level": "A2"
+  },
+  {
+    "word": "cut",
+    "mean_tr": "Kesmek",
+    "example_en": "I’ve cut enough here for supper.",
+    "example_tr": "Burada akşam yemeği için yeterince kestim.",
+    "level": "A2"
+  },
+  {
+    "word": "dark",
+    "mean_tr": "Karanlık",
+    "example_en": "He looked tall and lean in a dark suit.",
+    "example_tr": "Koyu renk takım elbisesiyle uzun ve zayıf görünüyordu.",
+    "level": "A1"
+  },
+  {
+    "word": "data",
+    "mean_tr": "veri",
+    "example_en": "You have some access to data bases that could be helpful.",
+    "example_tr": "Yardımcı olabilecek bazı veri tabanlarına erişiminiz var.",
+    "level": "B2"
+  },
+  {
+    "word": "daughter",
+    "mean_tr": "kız evlat",
+    "example_en": "I remember the daughter, too.",
+    "example_tr": "Kızını da hatırlıyorum.",
+    "level": "A1"
+  },
+  {
+    "word": "day",
+    "mean_tr": "gün",
+    "example_en": "“This may be the last great day,” he said.",
+    "example_tr": "“Bu son harika gün olabilir,” dedi.",
+    "level": "A1"
+  }
+]

@@ -1,18 +1,18 @@
 .card {
-  border: 2px solid #ccc;
   width: 400px;
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin: 1rem;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 
   .word {
     button {
       background: none;
-      border: 1px solid #ccc;
+      border: 1px solid black;
       padding: 1rem;
       font-size: 2rem;
       cursor: pointer;
@@ -24,9 +24,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
+
     button {
       background: none;
-      border: 1px solid red;
+      border: 1px solid black;
       cursor: pointer;
       padding: 1rem;
       font-size: 1rem;
