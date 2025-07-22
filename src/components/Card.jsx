@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import styles from '../style/Card.module.scss';
 
 export default function Card({ word, mean_tr, example_en, example_tr, level }) {
   const [meaning, setMeaning] = useState(false);
   const [example, setExample] = useState(false);
+
+  const cardColor = useMemo(() => getRandomColor(), []);
 
   function getRandomColor() {
     const colors = [
@@ -28,7 +30,7 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
   }
 
   return (
-    <div className={styles.card} style={{ background: getRandomColor() }}>
+    <div className={styles.card} style={{ background: cardColor }}>
       <div className={styles.word}>
         <button
           className={styles.tooltipBtn}
@@ -45,7 +47,9 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
           {example ? example_tr : example_en}
         </button>
       </div>
-      <div className={styles.level}>{level}</div>
+      <div className={styles.levelContainer}>
+        <div className={styles.level}>{level}</div>
+      </div>
     </div>
   );
 }

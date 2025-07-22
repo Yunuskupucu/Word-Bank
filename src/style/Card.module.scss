@@ -37,12 +37,18 @@
     }
   }
 
-  .level {
-    width: 100%;
-    text-align: end;
-    padding-right: 1.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+  .levelContainer {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+
+    .level {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 5px;
+      border: 2px solid;
+      border-radius: 50%;
+    }
   }
 }
 .tooltipBtn {
