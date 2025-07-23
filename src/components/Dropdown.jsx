@@ -3,7 +3,7 @@ import styles from '../style/Dropdown.module.scss';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('CEFR: A1');
+  const [selectedOption, setSelectedOption] = useState('CEFR: All');
 
   const options = ['CEFR: A1', 'CEFR: A2', 'CEFR: B1', 'CEFR: B2', 'CEFR: C1'];
 
