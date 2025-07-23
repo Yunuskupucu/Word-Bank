@@ -11,13 +11,21 @@ function shuffle(array) {
   return arr;
 }
 
-export default function CardList() {
-  const shuffledWords = shuffle(words);
+export default function CardList({ selectedLevel }) {
+  const filteredWords =
+    selectedLevel === 'CEFR: All'
+      ? shuffle(words)
+      : shuffle(
+          words.filter(
+            (word) => word.level === selectedLevel.replace('CEFR: ', '')
+          )
+        );
+
   return (
     <div className={styles.list}>
-      {shuffledWords.map((card, index) => {
-        return <Card key={index} {...card} />;
-      })}
+      {filteredWords.map((card, index) => (
+        <Card key={index} {...card} />
+      ))}
     </div>
   );
 }
