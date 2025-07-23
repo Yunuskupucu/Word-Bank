@@ -730,7 +730,7 @@
   {
     "word": "know",
     "mean_tr": "Bilmek",
-    "example_en": "I don’t Please be kind to your sister! him.",
+    "example_en": "I don’t know him. Please be kind to your sister!",
     "example_tr": "Onu tanımıyorum. Lütfen kız kardeşine karşı nazik ol!",
     "level": "A1"
   },
@@ -1541,7 +1541,7 @@
   },
   {
     "word": "north",
-    "mean_tr": "kuzeyinde",
+    "mean_tr": "kuzey",
     "example_en": "The wind is coming from the north.",
     "example_tr": "Rüzgar kuzeyden geliyor.",
     "level": "A2"
@@ -5483,99 +5483,99 @@
     "level": "C1"
   },
   {
-    "word": "adequate",
+    "word": "Adequate",
     "mean_tr": "yeterli, uygun, elverişli",
     "example_en": "Do you have adequate experience for this role?",
     "example_tr": "Bu rol için yeterli deneyime sahip misiniz?",
     "level": "C1"
   },
   {
-    "word": "adjacent",
+    "word": "Adjacent",
     "mean_tr": "bitişik",
     "example_en": "The hotel is adjacent to the conference center.",
     "example_tr": "Otel, konferans merkezine bitişiktir.",
     "level": "C1"
   },
   {
-    "word": "allocate",
-    "mean_tr": "pay etmek, bölüştürmek",
+    "word": "Allocate",
+    "mean_tr": "bölüştürmek",
     "example_en": "Funds will be allocated for the new project.",
     "example_tr": "Yeni proje için fonlar pay edilecek.",
     "level": "C1"
   },
   {
-    "word": "ally",
+    "word": "Ally",
     "mean_tr": "müttefik",
     "example_en": "The two nations became close allies.",
     "example_tr": "İki ulus yakın müttefik oldu.",
     "level": "C1"
   },
   {
-    "word": "antibody",
+    "word": "Antibody",
     "mean_tr": "antikor",
     "example_en": "Vaccines stimulate the production of antibodies.",
     "example_tr": "Aşılar antikor üretimini uyarır.",
     "level": "C1"
   },
   {
-    "word": "arch",
-    "mean_tr": "kemer",
+    "word": "Arch",
+    "mean_tr": "Kemer",
     "example_en": "The ancient Roman arch stood proudly.",
     "example_tr": "Antik Roma kemeri gururla duruyordu.",
     "level": "C1"
   },
   {
-    "word": "array",
+    "word": "Array",
     "mean_tr": "bir dizi-sıra",
     "example_en": "The store offers a vast array of products.",
     "example_tr": "Mağaza geniş bir ürün yelpazesi sunuyor.",
     "level": "C1"
   },
   {
-    "word": "artificial",
+    "word": "Artificial",
     "mean_tr": "yapay",
     "example_en": "Artificial intelligence is changing the world.",
     "example_tr": "Yapay zeka dünyayı değiştiriyor.",
     "level": "C1"
   },
   {
-    "word": "assess",
-    "mean_tr": "değerlendirmek",
+    "word": "Assess",
+    "mean_tr": "Değerlendirmek",
     "example_en": "It's important to assess the risks before starting.",
     "example_tr": "Başlamadan önce riskleri değerlendirmek önemlidir.",
     "level": "C1"
   },
   {
-    "word": "associate",
-    "mean_tr": "ilişkilendirmek",
+    "word": "Associate",
+    "mean_tr": "İlişkilendirmek",
     "example_en": "Many people associate the brand with luxury.",
     "example_tr": "Birçok kişi markayı lüksle ilişkilendiriyor.",
     "level": "C1"
   },
   {
-    "word": "audit",
-    "mean_tr": "denetlemek, hesap denetimi",
+    "word": "Audit",
+    "mean_tr": "Denetlemek",
     "example_en": "The company decided to conduct an internal audit.",
     "example_tr": "Şirket dahili bir denetim yapmaya karar verdi.",
     "level": "C1"
   },
   {
-    "word": "beam",
-    "mean_tr": "ışın",
+    "word": "Beam",
+    "mean_tr": "Işın",
     "example_en": "A laser beam was used in the experiment.",
     "example_tr": "Deneyde bir lazer ışını kullanıldı.",
     "level": "C1"
   },
   {
-    "word": "binary",
-    "mean_tr": "ikili",
+    "word": "Binary",
+    "mean_tr": "İkili",
     "example_en": "Binary code is the fundamental language of computers.",
     "example_tr": "İkili kod, bilgisayarların temel dilidir.",
     "level": "C1"
   },
   {
-    "word": "breach",
-    "mean_tr": "ihlal, çiğneme",
+    "word": "Breach",
+    "mean_tr": "İhlal, çiğneme",
     "example_en": "Any breach of the regulations will result in penalties.",
     "example_tr": "Yönetmeliklerin herhangi bir ihlali cezalara yol açacaktır.",
     "level": "C1"
