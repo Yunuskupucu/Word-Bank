@@ -47,7 +47,10 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
           {example ? example_tr : example_en}
         </button>
       </div>
-      <div className={styles.levelContainer}>
+      <div className={styles.infoContainer}>
+        <div className={styles.addBtnDiv}>
+          <button className={styles.addBtn}>+</button>
+        </div>
         <div className={styles.level}>{level}</div>
       </div>
     </div>

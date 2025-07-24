@@ -3,7 +3,7 @@ import styles from '../style/Dropdown.module.scss';
 
 const Dropdown = ({ selectedLevel, handleOptionClick }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const options = [
+  const levels = [
     'CEFR: All',
     'CEFR: A1',
     'CEFR: A2',
@@ -23,7 +23,7 @@ const Dropdown = ({ selectedLevel, handleOptionClick }) => {
       </div>
       {isOpen && (
         <div className={styles.dropdownOptions}>
-          {options.map((option, index) => (
+          {levels.map((option, index) => (
             <div
               key={index}
               className={styles.dropdownOption}
