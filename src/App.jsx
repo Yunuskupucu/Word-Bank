@@ -9,8 +9,8 @@ function App() {
   const selectedLevel = useSelector((state) => state.level.selectedLevel);
   const dispatch = useDispatch();
 
-  const handleOptionClick = (option) => {
-    dispatch(setSelectedLevel(option));
+  const handleOptionClick = (level) => {
+    dispatch(setSelectedLevel(level));
   };
 
   return (
