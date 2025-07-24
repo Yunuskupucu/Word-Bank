@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import styles from '../style/Card.module.scss';
+import { FaCheckSquare } from 'react-icons/fa';
 
 export default function Card({ word, mean_tr, example_en, example_tr, level }) {
   const [meaning, setMeaning] = useState(false);
@@ -49,7 +50,9 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
       </div>
       <div className={styles.infoContainer}>
         <div className={styles.addBtnDiv}>
-          <button className={styles.addBtn}>+</button>
+          <button className={styles.addBtn}>
+            <FaCheckSquare />
+          </button>
         </div>
         <div className={styles.level}>{level}</div>
       </div>
