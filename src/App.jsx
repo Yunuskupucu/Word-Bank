@@ -1,15 +1,16 @@
+import { useDispatch, useSelector } from 'react-redux';
 import CardList from './components/CardList';
 import Header from './components/Header';
 import './index.scss';
 import styles from './style/Main.module.scss';
-import { useState } from 'react';
+import { setSelectedLevel } from './redux/levelSlice';
 
 function App() {
-  const [selectedLevel, setSelectedLevel] = useState('CEFR: All');
+  const selectedLevel = useSelector((state) => state.level.selectedLevel);
+  const dispatch = useDispatch();
 
   const handleOptionClick = (option) => {
-    setSelectedLevel(option);
-    console.log(option);
+    dispatch(setSelectedLevel(option));
   };
 
   return (
