@@ -1,27 +1,16 @@
-import { useDispatch, useSelector } from 'react-redux';
 import CardList from './components/CardList';
 import Header from './components/Header';
 import './index.scss';
-import styles from './style/Main.module.scss';
-import { setSelectedLevel } from './redux/levelSlice';
+import { Routes, Route } from 'react-router-dom';
+import WordBox from './pages/WordBox';
+import Home from './pages/Home';
 
 function App() {
-  const selectedLevel = useSelector((state) => state.level.selectedLevel);
-  const dispatch = useDispatch();
-
-  const handleOptionClick = (level) => {
-    dispatch(setSelectedLevel(level));
-  };
-
   return (
-    <div className={styles.main}>
-      <Header
-        selectedLevel={selectedLevel}
-        handleOptionClick={handleOptionClick}
-      />
-      <CardList selectedLevel={selectedLevel} />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/wordBox" element={<WordBox />} />
+    </Routes>
   );
 }
-
 export default App;
