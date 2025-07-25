@@ -5561,8 +5561,8 @@
   },
   {
     "id": 696,
-    "word": "tree",
-    "mean_tr": "ağaç",
+    "word": "Tree",
+    "mean_tr": "Ağaç",
     "example_en": "There is a big tree in the garden.",
     "example_tr": "Bahçede büyük bir ağaç var.",
     "level": "A1"
@@ -7050,7 +7050,7 @@
   {
     "id": 882,
     "word": "lump",
-    "mean_tr": "yumru",
+    "mean_tr": "yumr,topak",
     "example_en": "There was a lump in the sugar.",
     "example_tr": "Şekerin içinde bir topak vardı.",
     "level": "C1"
