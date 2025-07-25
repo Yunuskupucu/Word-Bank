@@ -14,6 +14,11 @@ function Header({ selectedLevel, handleOptionClick }) {
 
   return (
     <div className={styles.header}>
+      {!homePage && (
+        <button className={styles.backButton} onClick={() => navigate('/')}>
+          ← Geri
+        </button>
+      )}
       <div className={styles.brand} onClick={() => navigate('/')}>
         <h1 className={styles.headerTitle}>
           <span>WORD BANK</span>

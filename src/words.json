@@ -682,7 +682,7 @@
   {
     "id": 86,
     "word": "interest",
-    "mean_tr": "faiz veya ilgi",
+    "mean_tr": "İlgi",
     "example_en": "The kids listened to the speaker for a little while, but then lost interest.",
     "example_tr": "Çocuklar bir süre konuşmacıyı dinlediler ama sonra ilgilerini kaybettiler.",
     "level": "A2"
@@ -1282,7 +1282,7 @@
   {
     "id": 161,
     "word": "me",
-    "mean_tr": "ben mi",
+    "mean_tr": "ben",
     "example_en": "The box is too heavy for me to lift.",
     "example_tr": "Kutu benim kaldırmam için çok ağır.",
     "level": "A1"
@@ -1489,8 +1489,8 @@
   },
   {
     "id": 187,
-    "word": "morning",
-    "mean_tr": "sabah",
+    "word": "Morning",
+    "mean_tr": "Sabah",
     "example_en": "Are you all going to church this morning?",
     "example_tr": "Bu sabah hepiniz kiliseye mi gidiyorsunuz?",
     "level": "A1"
@@ -1505,7 +1505,7 @@
   },
   {
     "id": 189,
-    "word": "mother",
+    "word": "Mother",
     "mean_tr": "Anne",
     "example_en": "Can you write a letter to your mother?",
     "example_tr": "Annene bir mektup yazabilir misin?",
@@ -1513,23 +1513,23 @@
   },
   {
     "id": 190,
-    "word": "mouth",
-    "mean_tr": "ağız",
+    "word": "Mouth",
+    "mean_tr": "Ağız",
     "example_en": "Keep your mouth shut while you are eating.",
     "example_tr": "Yemek yerken ağzını kapalı tut.",
     "level": "A1"
   },
   {
     "id": 191,
-    "word": "move",
-    "mean_tr": "hareket etmek",
+    "word": "Move",
+    "mean_tr": "Hareket etmek",
     "example_en": "She was unable to move her legs.",
     "example_tr": "Bacaklarını hareket ettiremedi.",
     "level": "A2"
   },
   {
     "id": 192,
-    "word": "movement",
+    "word": "Movement",
     "mean_tr": "Hareket",
     "example_en": "There are reports of fresh troop movements across the border.",
     "example_tr": "Sınır boyunca yeni asker hareketliliği raporları var.",
@@ -1537,8 +1537,8 @@
   },
   {
     "id": 193,
-    "word": "movie",
-    "mean_tr": "film",
+    "word": "Movie",
+    "mean_tr": "Film",
     "example_en": "I prefer watching movies instead of listening to music.",
     "example_tr": "Müzik dinlemek yerine film izlemeyi tercih ederim.",
     "level": "A1"
@@ -1569,8 +1569,8 @@
   },
   {
     "id": 197,
-    "word": "music",
-    "mean_tr": "müzik",
+    "word": "Music",
+    "mean_tr": "Müzik",
     "example_en": "I prefer watching movies instead of listening to music.",
     "example_tr": "Müzik dinlemek yerine film izlemeyi tercih ederim.",
     "level": "A1"
@@ -1585,8 +1585,8 @@
   },
   {
     "id": 199,
-    "word": "my",
-    "mean_tr": "benim",
+    "word": "My",
+    "mean_tr": "Benim",
     "example_en": "I tried to force from my memory.",
     "example_tr": "Hafızamdan zorla silmeye çalıştım.",
     "level": "A1"
