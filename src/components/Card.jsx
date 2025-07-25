@@ -1,10 +1,15 @@
 import { useState, useMemo } from 'react';
 import styles from '../style/Card.module.scss';
-import { FaCheckSquare } from 'react-icons/fa';
+import { FaCheckSquare, FaRegSquare } from 'react-icons/fa';
+import { useDispatch, useSelector } from 'react-redux';
+import { addWord, removeWord } from '../redux/savedWordsSlice';
 
 export default function Card({ word, mean_tr, example_en, example_tr, level }) {
   const [meaning, setMeaning] = useState(false);
   const [example, setExample] = useState(false);
+  const dispatch = useDispatch();
+  const savedWords = useSelector((state) => state.savedWords.words);
+  const isSaved = savedWords.some((savedWord) => savedWord.word === word);
 
   const cardColor = useMemo(() => getRandomColor(), []);
 
@@ -30,6 +35,14 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
     return colors[Math.floor(Math.random() * colors.length)];
   }
 
+  const handleSaveWord = () => {
+    if (isSaved) {
+      dispatch(removeWord({ word }));
+    } else {
+      dispatch(addWord({ word, mean_tr, example_en, example_tr, level }));
+    }
+  };
+
   return (
     <div className={styles.card} style={{ background: cardColor }}>
       <div className={styles.word}>
@@ -50,8 +63,8 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
       </div>
       <div className={styles.infoContainer}>
         <div className={styles.addBtnDiv}>
-          <button className={styles.addBtn}>
-            <FaCheckSquare />
+          <button className={styles.addBtn} onClick={handleSaveWord}>
+            {isSaved ? <FaCheckSquare /> : <FaRegSquare />}
           </button>
         </div>
         <div className={styles.level}>{level}</div>

@@ -1,5 +1,3 @@
-import CardList from './components/CardList';
-import Header from './components/Header';
 import './index.scss';
 import { Routes, Route } from 'react-router-dom';
 import WordBox from './pages/WordBox';
