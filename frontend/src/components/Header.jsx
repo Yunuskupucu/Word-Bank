@@ -14,28 +14,43 @@ function Header({ selectedLevel, handleOptionClick }) {
 
   return (
     <div className={styles.header}>
-      {!homePage && (
-        <button className={styles.backButton} onClick={() => navigate('/')}>
-          ← Geri
-        </button>
-      )}
-      <div className={styles.brand} onClick={() => navigate('/')}>
-        <h1 className={styles.headerTitle}>
-          <span>WORD BANK</span>
-        </h1>
-        <p>2025</p>
-      </div>
-      {homePage && (
-        <div className={styles.dropdownContainer}>
-          <button className={styles.bagCheck} onClick={() => handleNavigate()}>
-            <IoBagCheck />
-          </button>
-          <Dropdown
-            selectedLevel={selectedLevel}
-            handleOptionClick={handleOptionClick}
-          />
+      <div className={styles.headerContainer}>
+        <div className={styles.brand} onClick={() => navigate('/')}>
+          <div className={styles.brandContent}>
+            <h1 className={styles.headerTitle}>
+              <span className={styles.wordBank}>WORD BANK</span>
+            </h1>
+            <p className={styles.year}>2025</p>
+          </div>
         </div>
-      )}
+        <div className={styles.backButtonContainer}>
+          {!homePage && (
+            <button className={styles.backButton} onClick={() => navigate('/')}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+              <span>Geri</span>
+            </button>
+          )}
+        </div>
+        {homePage && (
+          <div className={styles.dropdownContainer}>
+            <button
+              className={styles.bagCheck}
+              onClick={() => handleNavigate()}
+            >
+              <IoBagCheck />
+              <span className={styles.bagTooltip}>Kelime Kutusu</span>
+            </button>
+            <div className={styles.dropdownWrapper}>
+              <Dropdown
+                selectedLevel={selectedLevel}
+                handleOptionClick={handleOptionClick}
+              />
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

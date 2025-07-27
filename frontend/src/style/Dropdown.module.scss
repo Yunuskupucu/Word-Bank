@@ -1,49 +1,411 @@
 .dropdown {
   position: relative;
-  font-family: Arial, sans-serif;
-  width: 200px;
-  z-index: 10001;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    sans-serif;
+  width: 60%;
+  z-index: 1000;
+}
+
+.dropdownHeader {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(100, 116, 139, 0.3);
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(100, 116, 139, 0.1),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  &:hover {
+    border-color: rgba(100, 116, 139, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(100, 116, 139, 0.2);
+
+    &::before {
+      left: 100%;
+    }
+  }
+
+  &.active {
+    border-color: #64748b;
+    box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .selectedOption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+
+    .levelIndicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: pulse 2s infinite;
+    }
+
+    .selectedText {
+      font-weight: 600;
+      color: #2d3748;
+      font-size: 13px;
+    }
+  }
+
+  .chevron {
+    width: 16px;
+    height: 16px;
+    color: #718096;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      stroke-width: 2.5;
+    }
+
+    &.rotated {
+      transform: rotate(180deg);
+      color: #64748b;
+    }
+  }
+}
+
+.dropdownOptions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1),
+    0 1px 0px rgba(255, 255, 255, 0.2) inset;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1001;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+  }
+
+  .optionsContainer {
+    padding: 6px;
+    max-height: 250px;
+    overflow-y: auto;
+
+    // Custom scrollbar
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(102, 126, 234, 0.3);
+      border-radius: 3px;
+
+      &:hover {
+        background: rgba(102, 126, 234, 0.5);
+      }
+    }
+  }
+}
+
+.dropdownOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  position: relative;
+  margin-bottom: 2px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background: rgba(100, 116, 139, 0.08);
+    transform: translateX(4px);
+  }
+
+  &.selected {
+    background: rgba(100, 116, 139, 0.1);
+    border: 1px solid rgba(100, 116, 139, 0.2);
+
+    .optionLabel {
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .optionValue {
+      color: #64748b;
+    }
+  }
+
+  .optionIndicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+  }
+
+  .optionContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1px;
+
+    .optionLabel {
+      font-weight: 500;
+      color: #2d3748;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .optionValue {
+      font-size: 10px;
+      color: #718096;
+      font-weight: 400;
+    }
+  }
+
+  .checkmark {
+    width: 14px;
+    height: 14px;
+    color: #64748b;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s ease;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      stroke-width: 3;
+    }
+  }
+
+  &.selected .checkmark {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Animasyonlar
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Responsive tasarım
+@media (max-width: 480px) {
+  .dropdown {
+    width: 100%;
+  }
 
   .dropdownHeader {
-    background: linear-gradient(135deg, #7a7a7a, #4d4d4d);
+    padding: 10px 14px;
 
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    border: 1px solid black;
-    width: fit-content;
-    border-radius: 10px;
-    padding: 10px;
+    .selectedOption {
+      gap: 6px;
+
+      .selectedText {
+        font-size: 12px;
+      }
+    }
+
+    .chevron {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   .dropdownOptions {
-    position: absolute;
-    margin-top: 17rem;
-    background-color: #f2f2f2;
-    width: 60%;
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    z-index: 10000;
-    display: flex;
-    flex-direction: column;
+    .optionsContainer {
+      max-height: 200px;
+    }
+  }
 
-    .dropdownOption {
-      padding: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s;
+  .dropdownOption {
+    padding: 6px 10px;
+    gap: 6px;
 
-      &:hover {
-        background-color: #d9d9d9;
+    .optionContent {
+      .optionLabel {
+        font-size: 11px;
       }
 
-      &:not(:last-child) {
-        border-bottom: 1px solid #ccc;
+      .optionValue {
+        font-size: 9px;
       }
     }
+  }
+}
+
+// Dark mode desteği
+@media (prefers-color-scheme: dark) {
+  .dropdownHeader {
+    background: rgba(26, 32, 44, 0.95);
+    border-color: rgba(144, 205, 244, 0.2);
+
+    &:hover {
+      border-color: rgba(144, 205, 244, 0.4);
+    }
+
+    &.active {
+      border-color: #90cdf4;
+      box-shadow: 0 0 0 3px rgba(144, 205, 244, 0.1);
+    }
+
+    &::before {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(144, 205, 244, 0.1),
+        transparent
+      );
+    }
+
+    .selectedOption {
+      .selectedText {
+        color: #e2e8f0;
+      }
+    }
+
+    .chevron {
+      color: #a0aec0;
+
+      &.rotated {
+        color: #90cdf4;
+      }
+    }
+  }
+
+  .dropdownOptions {
+    background: rgba(26, 32, 44, 0.95);
+    border-color: rgba(255, 255, 255, 0.1);
+
+    .optionsContainer {
+      &::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(144, 205, 244, 0.3);
+
+        &:hover {
+          background: rgba(144, 205, 244, 0.5);
+        }
+      }
+    }
+  }
+
+  .dropdownOption {
+    &:hover {
+      background: rgba(144, 205, 244, 0.08);
+    }
+
+    &.selected {
+      background: rgba(144, 205, 244, 0.1);
+      border-color: rgba(144, 205, 244, 0.2);
+
+      .optionLabel {
+        color: #90cdf4;
+      }
+
+      .optionValue {
+        color: #90cdf4;
+      }
+    }
+
+    .optionContent {
+      .optionLabel {
+        color: #e2e8f0;
+      }
+
+      .optionValue {
+        color: #a0aec0;
+      }
+    }
+
+    .checkmark {
+      color: #90cdf4;
+    }
+  }
+}
+
+// Hover efektleri için ekstra animasyonlar
+.dropdownOption {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: transparent;
+    border-radius: 0 3px 3px 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::before {
+    background: linear-gradient(135deg, #64748b, #475569);
+  }
+
+  &.selected::before {
+    background: linear-gradient(135deg, #64748b, #475569);
   }
 }
