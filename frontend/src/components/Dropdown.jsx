@@ -22,7 +22,7 @@ const Dropdown = ({ selectedLevel, handleOptionClick }) => {
     return levels.find((level) => level.value === selectedLevel) || levels[0];
   };
 
-  // Dışarı tıklandığında dropdown'u kapat
+  // dropdown dışına tıklayınca kapansın
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -52,6 +52,7 @@ const Dropdown = ({ selectedLevel, handleOptionClick }) => {
           </span>
         </div>
 
+        {/* dropdown oku */}
         <div className={`${styles.chevron} ${isOpen ? styles.rotated : ''}`}>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <polyline points="6,9 12,15 18,9"></polyline>

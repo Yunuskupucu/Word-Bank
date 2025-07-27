@@ -15,11 +15,11 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
 
   function getRandomColor() {
     const colors = [
-      'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
-      'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)',
+      'linear-gradient(135deg, #4a6effff 0%, #ffffffff 100%)',
+      'linear-gradient(135deg, #a1c4fd 0%, #a0a9aeff 100%)',
       'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
       'linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%)',
-      'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+      'linear-gradient(135deg, #ffecd2 0%, #9c928eff 100%)',
       'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)',
       'linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%)',
       'linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%)',
