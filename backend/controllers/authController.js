@@ -57,6 +57,7 @@ export const login = async (req, res) => {
     );
 
     res.status(200).json({
+      token,
       message: 'Giriş başarılı!',
       token,
       user: {
@@ -66,6 +67,16 @@ export const login = async (req, res) => {
         wordBox: user.wordBox,
       },
     });
+  } catch (err) {
+    res.status(500).json({ message: 'Sunucu hatası', error: err.message });
+  }
+};
+
+export const logout = async (req, res) => {
+  try {
+    res
+      .status(200)
+      .json({ message: 'Çıkış başarılı. Token tarayıcıdan silinmeli.' });
   } catch (err) {
     res.status(500).json({ message: 'Sunucu hatası', error: err.message });
   }

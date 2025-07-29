@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import authRoutes from './routes/authRoute.js';
+import userRoutes from './routes/userRoutes.js';
 import { connectDB } from './connect.js';
 
 // .env dosyasını yükle
@@ -24,6 +25,7 @@ app.use(
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -43,3 +45,5 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   connectDB();
 });
+
+app.use('/api/auth', authRoutes);
