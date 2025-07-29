@@ -12,7 +12,6 @@ router.post('/login', login);
 router.post('/logout', logout);
 router.get('/profile', verifyToken, getProfile);
 
-// 🛡️ Token ile erişilebilen profil route'u
 router.get('/me', verifyToken, async (req, res) => {
   try {
     const user = await User.findById(req.user.userId);

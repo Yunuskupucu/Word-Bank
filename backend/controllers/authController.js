@@ -4,7 +4,6 @@ import jwt from 'jsonwebtoken';
 
 const JWT_SECRET = 'gizliKelimeDegistirBunu';
 
-// controllers/authController.js
 export const register = async (req, res) => {
   try {
     const { username, email, password } = req.body;
@@ -37,13 +36,13 @@ export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    // Kullanıcıyı bul
+    // kullanıcı bul
     const user = await User.findOne({ email });
     if (!user) {
       return res.status(401).json({ message: 'Geçersiz e-posta veya şifre.' });
     }
 
-    // Şifreyi kontrol et
+    // parola kontrol et
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
       return res.status(401).json({ message: 'Geçersiz e-posta veya şifre.' });
@@ -52,7 +51,7 @@ export const login = async (req, res) => {
     // JWT üret
     const token = jwt.sign(
       { userId: user._id, email: user.email },
-      process.env.JWT_SECRET || 'gizli_anahtar', // ortam değişkeni kullan
+      process.env.JWT_SECRET || 'secret_key',
       { expiresIn: '7d' }
     );
 

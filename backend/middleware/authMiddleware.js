@@ -14,7 +14,7 @@ export const verifyToken = (req, res, next) => {
       token,
       process.env.JWT_SECRET || 'gizli_anahtar'
     );
-    req.user = decoded; // token'dan gelen kullanıcı bilgilerini req.user içine koyarız
+    req.user = decoded; // tokendan gelen kullanıcı bilgilerini req.user içine koy
     next();
   } catch (err) {
     res.status(401).json({ message: 'Geçersiz veya süresi dolmuş token.' });
