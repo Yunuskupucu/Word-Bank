@@ -15,7 +15,7 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
 
   function getRandomColor() {
     const colors = [
-      'linear-gradient(135deg, #4a6effff 0%, #ffffffff 100%)',
+      'linear-gradient(135deg, #4a6effff 0%, #cececeff 100%)',
       'linear-gradient(135deg, #a1c4fd 0%, #a0a9aeff 100%)',
       'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
       'linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%)',
