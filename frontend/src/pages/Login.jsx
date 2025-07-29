@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({ username: '', password: '' });
+  const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -26,12 +26,19 @@ const Login = () => {
         'http://localhost:5001/api/auth/login',
         formData
       );
-      localStorage.setItem('token', res.data.token);
-      navigate('/wordBox');
+      console.log('Login response:', res.data); // Debug için yanıtı kontrol et
+
+      if (res.data.token) {
+        localStorage.setItem('token', res.data.token);
+        window.location.href = '/home'; // navigate yerine window.location kullan
+      } else {
+        setError('Token alınamadı');
+        setIsLoading(false);
+      }
     } catch (err) {
+      console.error('Login error:', err); // Debug için hatayı kontrol et
       const msg = err.response?.data?.message || 'Bir hata oluştu';
       setError(msg);
-    } finally {
       setIsLoading(false);
     }
   };
@@ -62,10 +69,10 @@ const Login = () => {
               </svg>
             </div>
             <input
-              type="text"
-              name="username"
-              placeholder="email"
-              value={formData.username}
+              type="email"
+              name="email"
+              placeholder="E-posta"
+              value={formData.email}
               onChange={handleChange}
               required
               className={styles.input}

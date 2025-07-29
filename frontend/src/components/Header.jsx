@@ -6,23 +6,22 @@ import { IoBagCheck, IoExitOutline } from 'react-icons/io5';
 function Header({ selectedLevel, handleOptionClick }) {
   const navigate = useNavigate();
   const location = useLocation();
-  const homePage = location.pathname === '/';
+  const isHome = location.pathname === '/home';
 
   const handleNavigate = () => {
     navigate('/wordBox');
   };
 
-  const handleExit = () => {
-    // Çıkış işlemi - sayfa yeniden yükleme veya ana sayfaya yönlendirme
+  const handleLogout = () => {
+    localStorage.removeItem('token');
     window.location.reload();
-    // veya
-    // navigate('/');
+    navigate('/login');
   };
 
   return (
     <div className={styles.header}>
       <div className={styles.headerContainer}>
-        <div className={styles.brand} onClick={() => navigate('/')}>
+        <div className={styles.brand} onClick={() => navigate('/home')}>
           <div className={styles.brandContent}>
             <h1 className={styles.headerTitle}>
               <span className={styles.wordBank}>WORD BANK</span>
@@ -31,8 +30,11 @@ function Header({ selectedLevel, handleOptionClick }) {
           </div>
         </div>
         <div className={styles.backButtonContainer}>
-          {!homePage && (
-            <button className={styles.backButton} onClick={() => navigate('/')}>
+          {!isHome && location.pathname !== '/' && (
+            <button
+              className={styles.backButton}
+              onClick={() => navigate('/home')}
+            >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="m15 18-6-6 6-6" />
               </svg>
@@ -40,7 +42,7 @@ function Header({ selectedLevel, handleOptionClick }) {
             </button>
           )}
         </div>
-        {homePage && (
+        {isHome && (
           <div className={styles.dropdownContainer}>
             <button
               className={styles.bagCheck}
@@ -54,7 +56,7 @@ function Header({ selectedLevel, handleOptionClick }) {
                 selectedLevel={selectedLevel}
                 handleOptionClick={handleOptionClick}
               />
-              <button className={styles.exitButton} onClick={handleExit}>
+              <button className={styles.exitButton} onClick={handleLogout}>
                 <IoExitOutline />
                 <span className={styles.exitTooltip}>Çıkış Yap</span>
               </button>

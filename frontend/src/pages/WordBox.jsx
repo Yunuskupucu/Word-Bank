@@ -10,7 +10,7 @@ export default function WordBox() {
     <>
       <Header />
       <div className={styles.main}>
-        <h1>✅ TAMAMLANANLAR ✅</h1>
+        <h1>🏆 TAMAMLANANLAR 🧠</h1>
         <div className={styles.cardContainer}>
           {savedWords.map((word, index) => (
             <Card key={index} {...word} />
