@@ -7422,5 +7422,29 @@
     "example_en": "Pictures can then be enhanced on a pc.",
     "example_tr": "Resimler daha sonra bilgisayarda geliştirilebilir..",
     "level": "C1"
+  },
+  {
+    "id": 929,
+    "word": "Prefer",
+    "mean_tr": "Tercih etmek",
+    "example_en": "I prefer tea over coffee in the morning.",
+    "example_tr": "Sabahları kahve yerine çayı tercih ederim.",
+    "level": "B1"
+  },
+  {
+    "id": 930,
+    "word": "Realise",
+    "mean_tr": "Fark etmek, anlamak",
+    "example_en": "She didn't realise how late it was until she checked the time.",
+    "example_tr": "Saatine bakana kadar ne kadar geç olduğunu fark etmedi.",
+    "level": "B2"
+  },
+  {
+    "id": 931,
+    "word": "Forget",
+    "mean_tr": "Unutmak",
+    "example_en": "Don't forget to lock the door before leaving.",
+    "example_tr": "Çıkmadan önce kapıyı kilitlemeyi unutma.",
+    "level": "A2"
   }
 ]
