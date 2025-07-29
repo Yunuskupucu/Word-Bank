@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import styles from '../style/Header.module.scss';
 import Dropdown from './Dropdown';
-import { IoBagCheck } from 'react-icons/io5';
+import { IoBagCheck, IoExitOutline } from 'react-icons/io5';
 
 function Header({ selectedLevel, handleOptionClick }) {
   const navigate = useNavigate();
@@ -10,6 +10,13 @@ function Header({ selectedLevel, handleOptionClick }) {
 
   const handleNavigate = () => {
     navigate('/wordBox');
+  };
+
+  const handleExit = () => {
+    // Çıkış işlemi - sayfa yeniden yükleme veya ana sayfaya yönlendirme
+    window.location.reload();
+    // veya
+    // navigate('/');
   };
 
   return (
@@ -47,6 +54,10 @@ function Header({ selectedLevel, handleOptionClick }) {
                 selectedLevel={selectedLevel}
                 handleOptionClick={handleOptionClick}
               />
+              <button className={styles.exitButton} onClick={handleExit}>
+                <IoExitOutline />
+                <span className={styles.exitTooltip}>Çıkış Yap</span>
+              </button>
             </div>
           </div>
         )}
