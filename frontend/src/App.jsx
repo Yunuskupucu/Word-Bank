@@ -4,18 +4,18 @@ import WordBox from './pages/WordBox';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { setUserStart, setUserSuccess, setUserError } from './redux/userSlice';
-import Dashboard from './pages/Dashboard';
 
 function App() {
   const dispatch = useDispatch();
+  const token = localStorage.getItem('token');
 
   useEffect(() => {
     const fetchUser = async () => {
-      const token = localStorage.getItem('token');
       if (!token) return;
 
       dispatch(setUserStart());
@@ -28,32 +28,36 @@ function App() {
         });
         dispatch(setUserSuccess(res.data));
       } catch (err) {
-        dispatch(setUserError(err.response?.data?.message || 'Hata'));
+        dispatch(
+          setUserError(
+            err.response?.data?.message || 'Kullanıcı bilgisi alınamadı'
+          )
+        );
         localStorage.removeItem('token');
       }
     };
+
     fetchUser();
-  }, [dispatch]);
-  const token = localStorage.getItem('token');
+  }, [dispatch, token]);
 
   return (
     <Routes>
       <Route path="/" element={<Dashboard />} />
-      <Route 
-        path="/home" 
-        element={token ? <Home /> : <Navigate to="/login" replace />} 
+      <Route
+        path="/home"
+        element={token ? <Home /> : <Navigate to="/login" replace />}
       />
-      <Route 
-        path="/login" 
-        element={!token ? <Login /> : <Navigate to="/home" replace />} 
+      <Route
+        path="/login"
+        element={!token ? <Login /> : <Navigate to="/home" replace />}
       />
-      <Route 
-        path="/register" 
-        element={!token ? <Register /> : <Navigate to="/home" replace />} 
+      <Route
+        path="/register"
+        element={!token ? <Register /> : <Navigate to="/home" replace />}
       />
-      <Route 
-        path="/wordBox" 
-        element={token ? <WordBox /> : <Navigate to="/login" replace />} 
+      <Route
+        path="/wordBox"
+        element={token ? <WordBox /> : <Navigate to="/login" replace />}
       />
     </Routes>
   );
