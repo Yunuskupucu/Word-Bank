@@ -17,8 +17,11 @@ const savedWordsSlice = createSlice({
         (word) => word.word !== action.payload.word
       );
     },
+    setAllWords: (state, action) => {
+      state.words = action.payload;
+    },
   },
 });
 
-export const { addWord, removeWord } = savedWordsSlice.actions;
+export const { addWord, removeWord, setAllWords } = savedWordsSlice.actions;
 export default savedWordsSlice.reducer;

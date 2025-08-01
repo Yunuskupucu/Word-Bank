@@ -35,11 +35,63 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
     return colors[Math.floor(Math.random() * colors.length)];
   }
 
-  const handleSaveWord = () => {
-    if (isSaved) {
-      dispatch(removeWord({ word }));
-    } else {
-      dispatch(addWord({ word, mean_tr, example_en, example_tr, level }));
+  const handleSaveWord = async (e) => {
+    e.preventDefault(); // Butona tıklamayı durdur
+    e.stopPropagation(); // Event'in yukarı yayılmasını engelle
+
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        console.error('Token bulunamadı');
+        return;
+      }
+
+      if (isSaved) {
+        const response = await fetch(
+          `http://localhost:5001/api/users/wordbox/${word}`,
+          {
+            method: 'DELETE',
+            headers: {
+              Authorization: `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+          }
+        );
+
+        if (response.ok) {
+          console.log('Kelime silindi');
+          dispatch(removeWord({ word }));
+        } else {
+          console.error('Kelime silinemedi:', await response.text());
+        }
+      } else {
+        const response = await fetch(
+          'http://localhost:5001/api/users/wordbox',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${token}`,
+            },
+            body: JSON.stringify({
+              word,
+              mean_tr,
+              example_en,
+              example_tr,
+              level,
+            }),
+          }
+        );
+
+        if (response.ok) {
+          console.log('Kelime eklendi');
+          dispatch(addWord({ word, mean_tr, example_en, example_tr, level }));
+        } else {
+          console.error('Kelime eklenemedi:', await response.text());
+        }
+      }
+    } catch (error) {
+      console.error('WordBox işlemi hatası:', error);
     }
   };
 

@@ -1,10 +1,37 @@
+import { useEffect } from 'react';
 import styles from '../style/WordBox.module.scss';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Card from '../components/Card';
 import Header from '../components/Header';
+import { setAllWords } from '../redux/savedWordsSlice';
 
 export default function WordBox() {
+  const dispatch = useDispatch();
   const savedWords = useSelector((state) => state.savedWords.words);
+
+  useEffect(() => {
+    const fetchWords = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) return;
+
+        const response = await fetch('http://localhost:5001/api/users/wordbox', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        
+        if (response.ok) {
+          const words = await response.json();
+          dispatch(setAllWords(words));
+        }
+      } catch (error) {
+        console.error('WordBox getirme hatası:', error);
+      }
+    };
+
+    fetchWords();
+  }, [dispatch]);
 
   return (
     <>
