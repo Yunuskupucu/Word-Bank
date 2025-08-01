@@ -1,169 +1,291 @@
 .dashboard {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 50%, #d1d5db 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    animation: shine 3s infinite;
-  }
+.backgroundElements {
+  position: absolute;
+  inset: 0;
+}
 
-  @keyframes shine {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
+.floatingEmoji {
+  position: absolute;
+  opacity: 0.15;
+  animation: float 8s infinite ease-in-out;
+  font-size: 1.5rem;
+}
 
-  .dashboardContent {
-    max-width: 600px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 1;
+.gradientOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(31, 41, 55, 0.1) 0%,
+    transparent 50%,
+    transparent 100%
+  );
+}
+
+.mainContent {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: all 1s ease;
+  opacity: 0;
+  transform: translateY(40px);
+
+  &.visible {
+    opacity: 1;
     transform: translateY(0);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+}
 
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    }
+.heroSection {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 64rem;
+}
 
-    h1 {
-      font-size: 3.5rem;
-      color: #2c3e50;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      animation: fadeInDown 1s ease;
+.titleContainer {
+  margin-bottom: 2rem;
+  position: relative;
+}
 
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    }
+.mainTitle {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 800;
+  background: linear-gradient(to right, #374151 0%, #2563eb 50%, #1f2937 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
 
-    p {
-      font-size: 1.3rem;
-      color: #555;
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-      animation: fadeIn 1.5s ease;
+.titleEmoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
 
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    }
+.subtitle {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: #374151;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-weight: 300;
 
-    ul {
-      list-style: none;
-      padding: 0;
-      animation: fadeIn 2s ease;
-
-      li {
-        font-size: 1.2rem;
-        margin: 1rem 0;
-        color: #2c3e50;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(-20px);
-        opacity: 0;
-        animation: slideIn 0.5s ease forwards;
-
-        @for $i from 1 through 3 {
-          &:nth-child(#{$i}) {
-            animation-duration: 1s * $i;
-          }
-        }
-
-        &::before {
-          content: '✓';
-          margin-right: 0.5rem;
-          color: #3498db;
-        }
-      }
-    }
+  .highlight1 {
+    color: #2563eb;
+    font-weight: 600;
   }
 
-  @keyframes slideIn {
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  .highlight2 {
+    color: #4f46e5;
+    font-weight: 600;
+  }
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  max-width: 96rem;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.featureCard {
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e5e7eb;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.8);
+    border-color: #bfdbfe;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 
-  .continueBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    padding: 1rem 2.5rem;
-    font-size: 1.2rem;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    animation: bounce 2s infinite;
+  &.active {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+    border-color: #bfdbfe;
+  }
+}
 
-    &:hover {
-      background-color: #2980b9;
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    }
+.cardContent {
+  text-align: center;
+}
 
-    &:active {
-      transform: scale(0.98);
-    }
+.cardIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+
+  &.activeIcon {
+    transform: scale(1.05);
   }
 
-  @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
+  .featureCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.cardDesc {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.cardGlow {
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(59, 130, 246, 0) 100%
+  );
+  filter: blur(1px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &.glowActive {
+    opacity: 1;
+  }
+
+  .featureCard:hover & {
+    opacity: 0.5;
+  }
+}
+
+.ctaButton {
+  position: relative;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(to right, #2563eb 0%, #4f46e5 100%);
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.buttonText {
+  position: relative;
+  z-index: 10;
+}
+
+.buttonGlow {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #2563eb 0%, #4f46e5 100%);
+  filter: blur(12px);
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  .ctaButton:hover & {
+    opacity: 0.5;
+  }
+}
+
+.buttonShine {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%) skewX(-12deg);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  .ctaButton:hover & {
+    opacity: 1;
+    animation: shine 1.5s ease-in-out;
+  }
+}
+
+.actionHint {
+  margin-top: 2rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+// Animations
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 1rem;
+  }
+
+  .heroSection {
+    margin-bottom: 2rem;
+  }
+
+  .benefitsContainer {
+    padding: 1.5rem;
+  }
+
+  .ctaButton {
+    padding: 0.875rem 2rem;
+    font-size: 1.125rem;
   }
 }
