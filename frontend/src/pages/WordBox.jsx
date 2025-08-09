@@ -15,12 +15,15 @@ export default function WordBox() {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const response = await fetch('http://localhost:5001/api/users/wordbox', {
-          headers: {
-            'Authorization': `Bearer ${token}`
+        const response = await fetch(
+          'http://localhost:5001/api/users/wordbox',
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
           }
-        });
-        
+        );
+
         if (response.ok) {
           const words = await response.json();
           dispatch(setAllWords(words));
