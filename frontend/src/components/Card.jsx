@@ -50,7 +50,7 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
 
       if (isSaved) {
         const response = await fetch(
-          `https://word-bank-frontend.onrender.com/api/users/wordbox/${word}`,
+          `${API_BASE_URL}/api/users/wordbox/${word}`,
           {
             method: 'DELETE',
             headers: {
@@ -67,23 +67,20 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
           console.error('Kelime silinemedi:', await response.text());
         }
       } else {
-        const response = await fetch(
-          'https://word-bank-frontend.onrender.com/api/users/wordbox',
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Bearer ${token}`,
-            },
-            body: JSON.stringify({
-              word,
-              mean_tr,
-              example_en,
-              example_tr,
-              level,
-            }),
-          }
-        );
+        const response = await fetch(`${API_BASE_URL}/api/users/wordbox`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            word,
+            mean_tr,
+            example_en,
+            example_tr,
+            level,
+          }),
+        });
 
         if (response.ok) {
           console.log('Kelime eklendi');
