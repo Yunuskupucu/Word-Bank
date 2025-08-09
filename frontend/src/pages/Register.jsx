@@ -8,6 +8,7 @@ const Register = () => {
   const [formData, setFormData] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -22,7 +23,7 @@ const Register = () => {
     setIsLoading(true);
 
     try {
-      await axios.post('http://localhost:5001/api/auth/register', formData);
+      await axios.post(`${API_BASE_URL}/api/auth/register`, formData);
       navigate('/login');
     } catch (err) {
       const msg = err.response?.data?.message || 'Bir hata oluştu';

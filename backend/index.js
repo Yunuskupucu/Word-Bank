@@ -14,7 +14,10 @@ const PORT = process.env.PORT || 5001;
 app.use(express.json());
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: [
+      'http://localhost:5173',
+      'https://word-bank-frontend.onrender.com',
+    ],
     credentials: true,
   })
 );
@@ -29,13 +32,11 @@ app.use((err, res) => {
     .json({ message: 'Bir şeyler ters gitti!', error: err.message });
 });
 
-app.get('/', (res) => {
-  res.json({ message: 'WordBank Backend API çalışıyor!' });
-});
-
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   connectDB();
 });
 
-app.use('/api/auth', authRoutes);
+app.get('/', (req, res) => {
+  res.json({ message: 'WordBank Backend API çalışıyor!' });
+});

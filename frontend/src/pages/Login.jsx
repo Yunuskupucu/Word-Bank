@@ -8,6 +8,7 @@ const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -22,10 +23,7 @@ const Login = () => {
     setIsLoading(true);
 
     try {
-      const res = await axios.post(
-        'http://localhost:5001/api/auth/login',
-        formData
-      );
+      const res = await axios.post(`${API_BASE_URL}/api/auth/login`, formData);
       console.log('Login response:', res.data); // Debug için yanıtı kontrol et
 
       if (res.data.token) {

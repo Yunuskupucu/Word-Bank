@@ -4,6 +4,8 @@ import { FaCheckSquare, FaRegSquare } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { addWord, removeWord } from '../redux/savedWordsSlice';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+
 export default function Card({ word, mean_tr, example_en, example_tr, level }) {
   const [meaning, setMeaning] = useState(false);
   const [example, setExample] = useState(false);
@@ -48,7 +50,7 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
 
       if (isSaved) {
         const response = await fetch(
-          `http://localhost:5001/api/users/wordbox/${word}`,
+          `https://word-bank-frontend.onrender.com/api/users/wordbox/${word}`,
           {
             method: 'DELETE',
             headers: {
@@ -66,7 +68,7 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
         }
       } else {
         const response = await fetch(
-          'http://localhost:5001/api/users/wordbox',
+          'https://word-bank-frontend.onrender.com/api/users/wordbox',
           {
             method: 'POST',
             headers: {

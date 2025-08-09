@@ -13,6 +13,7 @@ import { setUserStart, setUserSuccess, setUserError } from './redux/userSlice';
 function App() {
   const dispatch = useDispatch();
   const token = localStorage.getItem('token');
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -21,7 +22,7 @@ function App() {
       dispatch(setUserStart());
 
       try {
-        const res = await axios.get('http://localhost:5001/api/users/me', {
+        const res = await axios.get(`${API_BASE_URL}/api/users/me`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

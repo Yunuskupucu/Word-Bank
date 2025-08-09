@@ -8,6 +8,7 @@ import { setAllWords } from '../redux/savedWordsSlice';
 export default function WordBox() {
   const dispatch = useDispatch();
   const savedWords = useSelector((state) => state.savedWords.words);
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
   useEffect(() => {
     const fetchWords = async () => {
@@ -15,14 +16,11 @@ export default function WordBox() {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const response = await fetch(
-          'http://localhost:5001/api/users/wordbox',
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
+        const response = await fetch(`${API_BASE_URL}/api/users/wordbox`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
 
         if (response.ok) {
           const words = await response.json();
