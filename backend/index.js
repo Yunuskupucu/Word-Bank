@@ -19,17 +19,20 @@ app.use(
       'https://word-bank-frontend.onrender.com',
     ],
     credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Bu satırı ekleyin
+    allowedHeaders: ['Content-Type', 'Authorization'], // Bu satırı ekleyin
   })
 );
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 
-app.use((err, res) => {
+app.use((err, req, res, next) => {
   console.error(err.stack);
-  res
-    .status(500)
-    .json({ message: 'Bir şeyler ters gitti!', error: err.message });
+  res.status(500).json({
+    message: 'Bir şeyler ters gitti!',
+    error: err.message,
+  });
 });
 
 app.listen(PORT, () => {
