@@ -9,6 +9,9 @@
 
 <p align="center"><em>📚 İngilizce kelime öğrenimini verimli ve eğlenceli hale getiren, kullanıcı dostu bir web uygulaması.</em></p>
 
+<h2 align="center">Hemen Dene !  :  https://word-bank-frontend.onrender.com</h2>
+
+
 ---
 
 <h2>🚀 Proje Hakkında</h2>
