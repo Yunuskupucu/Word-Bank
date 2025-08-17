@@ -56,4 +56,4 @@
 
 ---
 
-<h2 align="center">💡 "Kelime öğrenmek bir yolculuktur, WordBox bu yolda seninle!"</h2>
+<h2 align="center">💡 "Kelime öğrenmek bir yolculuktur, WordBank bu yolda seninle!"</h2>
