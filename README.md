@@ -51,9 +51,4 @@
 
 ---
 
-<p>💡 Not: <code>.env</code> dosyasına <code>MONGO_URL</code> ve <code>JWT_SECRET</code> eklemeyi unutma.</p>
-
-
----
-
 <h2 align="center">💡 "Kelime öğrenmek bir yolculuktur, WordBank bu yolda seninle!"</h2>
