@@ -1,4 +1,4 @@
-<h1 align="center">📘 WordBox - İngilizce Kelime Kartları Uygulaması</h1>
+<h1 align="center">📘 WordBank - İngilizce Kelime Kartları Uygulaması</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18.2.0-blue?style=flat&logo=react" />
