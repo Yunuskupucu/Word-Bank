@@ -1,4 +1,4 @@
-<h1 align="center">📘 WordBox - İngilizce Kelime Kartları Uygulaması</h1>
+<h1 align="center">📘 WordBank - İngilizce Kelime Kartları Uygulaması</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18.2.0-blue?style=flat&logo=react" />
@@ -8,6 +8,9 @@
 </p>
 
 <p align="center"><em>📚 İngilizce kelime öğrenimini verimli ve eğlenceli hale getiren, kullanıcı dostu bir web uygulaması.</em></p>
+
+<h2 align="center">Hemen Dene !  :  https://word-bank-frontend.onrender.com</h2>
+
 
 ---
 
@@ -48,9 +51,4 @@
 
 ---
 
-<p>💡 Not: <code>.env</code> dosyasına <code>MONGO_URL</code> ve <code>JWT_SECRET</code> eklemeyi unutma.</p>
-
-
----
-
-<h2 align="center">💡 "Kelime öğrenmek bir yolculuktur, WordBox bu yolda seninle!"</h2>
+<h2 align="center">💡 "Kelime öğrenmek bir yolculuktur, WordBank bu yolda seninle!"</h2>
