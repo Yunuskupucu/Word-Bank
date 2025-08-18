@@ -21,6 +21,25 @@ function Header({ selectedLevel, handleOptionClick }) {
   return (
     <div className={styles.header}>
       <div className={styles.headerContainer}>
+        {isHome && (
+          <Dropdown
+            selectedLevel={selectedLevel}
+            handleOptionClick={handleOptionClick}
+          />
+        )}
+
+        {!isHome && location.pathname !== '/' && (
+          <button
+            className={styles.backButton}
+            onClick={() => navigate('/home')}
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+            <span>Geri</span>
+          </button>
+        )}
+
         <div className={styles.brand} onClick={() => navigate('/home')}>
           <div className={styles.brandContent}>
             <h1 className={styles.headerTitle}>
@@ -29,40 +48,25 @@ function Header({ selectedLevel, handleOptionClick }) {
             <p className={styles.year}>2025</p>
           </div>
         </div>
-        <div className={styles.backButtonContainer}>
-          {!isHome && location.pathname !== '/' && (
-            <button
-              className={styles.backButton}
-              onClick={() => navigate('/home')}
-            >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="m15 18-6-6 6-6" />
-              </svg>
-              <span>Geri</span>
-            </button>
-          )}
-        </div>
-        {isHome && (
+        <div>
           <div className={styles.dropdownContainer}>
-            <button
-              className={styles.bagCheck}
-              onClick={() => handleNavigate()}
-            >
-              <IoBagCheck />
-              <span className={styles.bagTooltip}>Kelime Kutusu</span>
-            </button>
             <div className={styles.dropdownWrapper}>
-              <Dropdown
-                selectedLevel={selectedLevel}
-                handleOptionClick={handleOptionClick}
-              />
               <button className={styles.exitButton} onClick={handleLogout}>
                 <IoExitOutline />
                 <span className={styles.exitTooltip}>Çıkış Yap</span>
               </button>
             </div>
+            {isHome && (
+              <button
+                className={styles.bagCheck}
+                onClick={() => handleNavigate()}
+              >
+                <IoBagCheck />
+                <span className={styles.bagTooltip}>Kelime Kutusu</span>
+              </button>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

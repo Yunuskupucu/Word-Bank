@@ -67,7 +67,7 @@ const Dashboard = () => {
         {/* Hero Section */}
         <div className={styles.heroSection}>
           <div className={styles.titleContainer}>
-            <h1 className={styles.mainTitle}>WORD BOX</h1>
+            <h1 className={styles.mainTitle}>WORD BANK</h1>
             <div className={styles.titleEmoji}>🧠📚</div>
           </div>
 
