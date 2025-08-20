@@ -3,15 +3,36 @@ import styles from '../style/Dropdown.module.scss';
 
 const Dropdown = ({ selectedLevel, handleOptionClick }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); // 👈 mobil kontrol
   const dropdownRef = useRef(null);
 
   const levels = [
-    { value: 'CEFR: All', label: 'Tüm Seviyeler', color: '#667eea' },
-    { value: 'CEFR: A1', label: 'Başlangıç (A1)', color: '#4ade80' },
-    { value: 'CEFR: A2', label: 'Temel (A2)', color: '#22d3ee' },
-    { value: 'CEFR: B1', label: 'Orta Alt (B1)', color: '#fbbf24' },
-    { value: 'CEFR: B2', label: 'Orta Üst (B2)', color: '#f97316' },
-    { value: 'CEFR: C1', label: 'İleri (C1)', color: '#ef4444' },
+    {
+      value: 'CEFR: All',
+      label: 'Tüm Seviyeler',
+      short: 'All',
+      color: '#667eea',
+    },
+    {
+      value: 'CEFR: A1',
+      label: 'Başlangıç (A1)',
+      short: 'A1',
+      color: '#4ade80',
+    },
+    { value: 'CEFR: A2', label: 'Temel (A2)', short: 'A2', color: '#22d3ee' },
+    {
+      value: 'CEFR: B1',
+      label: 'Orta Alt (B1)',
+      short: 'B1',
+      color: '#fbbf24',
+    },
+    {
+      value: 'CEFR: B2',
+      label: 'Orta Üst (B2)',
+      short: 'B2',
+      color: '#f97316',
+    },
+    { value: 'CEFR: C1', label: 'İleri (C1)', short: 'C1', color: '#ef4444' },
   ];
 
   const toggleDropdown = () => {
@@ -29,11 +50,18 @@ const Dropdown = ({ selectedLevel, handleOptionClick }) => {
         setIsOpen(false);
       }
     };
-
     document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // ekran boyutunu takip et
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
     };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
@@ -48,7 +76,7 @@ const Dropdown = ({ selectedLevel, handleOptionClick }) => {
             style={{ backgroundColor: getSelectedOption().color }}
           ></div>
           <span className={styles.selectedText}>
-            {getSelectedOption().label}
+            {isMobile ? getSelectedOption().short : getSelectedOption().label}
           </span>
         </div>
 
@@ -78,8 +106,14 @@ const Dropdown = ({ selectedLevel, handleOptionClick }) => {
                 style={{ backgroundColor: option.color }}
               ></div>
               <div className={styles.optionContent}>
-                <span className={styles.optionLabel}>{option.label}</span>
-                <span className={styles.optionValue}>{option.value}</span>
+                <span className={styles.optionLabel}>
+                  {isMobile ? option.short : option.label}
+                </span>
+
+                {/* Sadece masaüstünde gösterilsin */}
+                {!isMobile && (
+                  <span className={styles.optionValue}>{option.value}</span>
+                )}
               </div>
               {selectedLevel === option.value && (
                 <div className={styles.checkmark}>
