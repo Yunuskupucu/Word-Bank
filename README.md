@@ -25,7 +25,7 @@
   <li>👆 Kelimenin ya da cümlenin üzerine tıklanarak <strong>Türkçe anlamı</strong> görülebilir.</li>
   <li>✅ Altındaki <strong>checkbox</strong> ile öğrenilen kelimeler işaretlenebilir.</li>
   <li>📦 İşaretlenen kelimeler, <strong>WordBox</strong> isimli özel sayfada saklanır ve listelenebilir.</li>
-  <li>📂 Üst kısımdaki <strong>Dropdown menü</strong> ile <code>A1 - C2</code> arası seviyeler seçilebilir.</li>
+  <li>📂 Üst kısımdaki <strong>Dropdown menü</strong> ile <code>A1 - C1</code> arası seviyeler seçilebilir.</li>
 </ul>
 
 ---
