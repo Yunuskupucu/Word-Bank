@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react';
 import styles from '../style/Card.module.scss';
-import { FaCheckSquare, FaRegSquare } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { addWord, removeWord } from '../redux/savedWordsSlice';
+import { FaRegStar, FaStar } from 'react-icons/fa';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
@@ -115,7 +115,7 @@ export default function Card({ word, mean_tr, example_en, example_tr, level }) {
       <div className={styles.infoContainer}>
         <div className={styles.addBtnDiv}>
           <button className={styles.addBtn} onClick={handleSaveWord}>
-            {isSaved ? <FaCheckSquare /> : <FaRegSquare />}
+            {isSaved ? <FaStar /> : <FaRegStar />}
           </button>
         </div>
         <div className={styles.level}>{level}</div>

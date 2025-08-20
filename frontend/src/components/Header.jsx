@@ -2,7 +2,8 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import styles from '../style/Header.module.scss';
 import Dropdown from './Dropdown';
-import { IoBagCheck, IoExitOutline } from 'react-icons/io5';
+import { IoExitOutline } from 'react-icons/io5';
+import { FaRegStar } from 'react-icons/fa';
 
 function Header({ selectedLevel, handleOptionClick }) {
   const navigate = useNavigate();
@@ -34,7 +35,6 @@ function Header({ selectedLevel, handleOptionClick }) {
   return (
     <div className={styles.header}>
       <div className={styles.headerContainer}>
-        {/* Sol taraf */}
         <div className={styles.leftSection}>
           {isHome && (
             <Dropdown
@@ -56,7 +56,6 @@ function Header({ selectedLevel, handleOptionClick }) {
           )}
         </div>
 
-        {/* Merkez - Brand */}
         <div className={styles.brand} onClick={() => navigate('/home')}>
           <div className={styles.brandContent}>
             <h1 className={styles.headerTitle}>
@@ -69,7 +68,6 @@ function Header({ selectedLevel, handleOptionClick }) {
           </div>
         </div>
 
-        {/* Sağ taraf */}
         <div className={styles.rightSection}>
           <div className={styles.dropdownContainer}>
             <div className={styles.dropdownWrapper}>
@@ -84,7 +82,7 @@ function Header({ selectedLevel, handleOptionClick }) {
                 className={styles.bagCheck}
                 onClick={() => handleNavigate()}
               >
-                <IoBagCheck />
+                <FaRegStar />
                 <span className={styles.bagTooltip}>Kelime Kutusu</span>
               </button>
             )}
