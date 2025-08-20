@@ -45,7 +45,9 @@
 <h2>🖥️ Ekran Görüntüsü</h2>
 
 <p align="center">
-<img width="1440" height="810" alt="Ekran Resmi 2025-07-29 14 54 40" src="https://github.com/user-attachments/assets/7175397c-850c-436d-bd03-b7f6c4753819" />
+<img width="1440" height="813" alt="Ekran Resmi 2025-08-21 01 52 40" src="https://github.com/user-attachments/assets/b7785df1-401e-4e86-a0f4-d1296902b3ea" />
+<img width="1440" height="811" alt="Ekran Resmi 2025-08-21 01 52 50" src="https://github.com/user-attachments/assets/931b07c7-df7e-45ff-997e-3f4e66c5b6ec" />
+
 
 </p>
 
