@@ -57,9 +57,6 @@ const Dashboard = () => {
         ))}
       </div>
 
-      {/* Gradient Overlay */}
-      <div className={styles.gradientOverlay}></div>
-
       {/* Main Content */}
       <div
         className={`${styles.mainContent} ${isVisible ? styles.visible : ''}`}
@@ -68,7 +65,6 @@ const Dashboard = () => {
         <div className={styles.heroSection}>
           <div className={styles.titleContainer}>
             <h1 className={styles.mainTitle}>WORD BANK</h1>
-            <div className={styles.titleEmoji}>🧠📚</div>
           </div>
 
           <p className={styles.subtitle}>
