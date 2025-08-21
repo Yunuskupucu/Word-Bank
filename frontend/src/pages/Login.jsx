@@ -2,12 +2,14 @@ import styles from '../style/Login.module.scss';
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
   const handleChange = (e) => {
@@ -86,7 +88,7 @@ const Login = () => {
               </svg>
             </div>
             <input
-              type="password"
+              type={showPassword ? 'text' : 'password'}
               name="password"
               placeholder="Şifre"
               value={formData.password}
@@ -94,6 +96,13 @@ const Login = () => {
               required
               className={styles.input}
             />
+            <button
+              type="button"
+              className={styles.passwordToggle}
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <FaEyeSlash size={20} /> : <FaEye size={20} />}
+            </button>
           </div>
 
           {error && (

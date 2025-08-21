@@ -2,6 +2,7 @@ import styles from '../style/Register.module.scss';
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Import eye icons
 
 const Register = () => {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ const Register = () => {
   });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false); // Şifre gösterme state'i
   const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
   const handleChange = (e) => {
@@ -102,7 +104,7 @@ const Register = () => {
               </svg>
             </div>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="password"
               placeholder="Şifre"
               value={formData.password}
@@ -110,6 +112,13 @@ const Register = () => {
               required
               className={styles.input}
             />
+            <button
+              type="button"
+              className={styles.passwordToggle}
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <FaEyeSlash size={20} /> : <FaEye size={20} />}
+            </button>
           </div>
 
           {error && (
