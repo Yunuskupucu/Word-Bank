@@ -1044,7 +1044,7 @@
     "word": "likely",
     "mean_tr": "Muhtemel",
     "example_en": "“Will it rain tomorrow?” “Most likely.”",
-    "example_tr": "“Yarın yağmur yağacak mı?” “Büyük olasılıkla.”",
+    "example_tr": "A: Yarın yağmur yağacak mı? B: Büyük olasılıkla.",
     "level": "B1"
   },
   {
@@ -2648,14 +2648,6 @@
     "level": "C1"
   },
   {
-    "id": 332,
-    "word": "consider",
-    "mean_tr": "göz önüne almak",
-    "example_en": "It was too far to consider driving every day, even if she had a car.",
-    "example_tr": "Her gün araba kullanmayı düşünmek çok uzaktı, arabası olmasa bile.",
-    "level": "B1"
-  },
-  {
     "id": 333,
     "word": "consumer",
     "mean_tr": "tüketici",
@@ -2866,7 +2858,7 @@
   {
     "id": 359,
     "word": "itself",
-    "mean_tr": "Kendis",
+    "mean_tr": "Kendisi",
     "example_en": "It repeats itself because it is the record of the choices of people.",
     "example_tr": "Kendini tekrar ediyor çünkü insanların seçimlerinin kaydıdır.",
     "level": "B1"
@@ -5916,7 +5908,7 @@
     "word": "western",
     "mean_tr": "batı (bölgeye ait)",
     "example_en": "This is a western movie.",
-    "example_tr": "Bu bir western filmi.",
+    "example_tr": "Bu bir batı filmi.",
     "level": "B1"
   },
   {
